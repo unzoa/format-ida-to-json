@@ -1,0 +1,325 @@
+4010e0:	4c 8d 64 24 f8       	lea    -0x8(%rsp),%r12
+4010e5:	4d 3b 66 10          	cmp    0x10(%r14),%r12
+4010e9:	0f 86 2a 05 00 00    	jbe    401619 <internal/cpu.processOptions+0x539>
+4010ef:	48 81 ec 88 00 00 00 	sub    $0x88,%rsp
+4010f6:	48 89 ac 24 80 00 00 	mov    %rbp,0x80(%rsp)
+4010fd:	00
+4010fe:	48 8d ac 24 80 00 00 	lea    0x80(%rsp),%rbp
+401105:	00
+401106:	48 89 84 24 90 00 00 	mov    %rax,0x90(%rsp)
+40110d:	00
+40110e:	eb 06                	jmp    401116 <internal/cpu.processOptions+0x36>
+401110:	48 89 f0             	mov    %rsi,%rax
+401113:	4c 89 c3             	mov    %r8,%rbx
+401116:	48 85 db             	test   %rbx,%rbx
+401119:	0f 84 2e 02 00 00    	je     40134d <internal/cpu.processOptions+0x26d>
+40111f:	31 c9                	xor    %ecx,%ecx
+401121:	e9 fa 02 00 00       	jmpq   401420 <internal/cpu.processOptions+0x340>
+401126:	48 c7 c1 ff ff ff ff 	mov    $0xffffffffffffffff,%rcx
+40112d:	48 85 c9             	test   %rcx,%rcx
+401130:	7d 0e                	jge    401140 <internal/cpu.processOptions+0x60>
+401132:	45 31 c0             	xor    %r8d,%r8d
+401135:	31 f6                	xor    %esi,%esi
+401137:	48 89 d9             	mov    %rbx,%rcx
+40113a:	eb 31                	jmp    40116d <internal/cpu.processOptions+0x8d>
+40113c:	0f 1f 40 00          	nopl   0x0(%rax)
+401140:	48 39 d9             	cmp    %rbx,%rcx
+401143:	0f 87 c7 04 00 00    	ja     401610 <internal/cpu.processOptions+0x530>
+401149:	48 8d 71 01          	lea    0x1(%rcx),%rsi
+40114d:	48 39 f3             	cmp    %rsi,%rbx
+401150:	0f 82 af 04 00 00    	jb     401605 <internal/cpu.processOptions+0x525>
+401156:	48 29 cb             	sub    %rcx,%rbx
+401159:	48 8d 7b ff          	lea    -0x1(%rbx),%rdi
+40115d:	49 89 f8             	mov    %rdi,%r8
+401160:	48 f7 df             	neg    %rdi
+401163:	48 c1 ff 3f          	sar    $0x3f,%rdi
+401167:	48 21 fe             	and    %rdi,%rsi
+40116a:	48 01 c6             	add    %rax,%rsi
+40116d:	48 83 f9 04          	cmp    $0x4,%rcx
+401171:	7c 9d                	jl     401110 <internal/cpu.processOptions+0x30>
+401173:	81 38 63 70 75 2e    	cmpl   $0x2e757063,(%rax)
+401179:	75 95                	jne    401110 <internal/cpu.processOptions+0x30>
+40117b:	31 d2                	xor    %edx,%edx
+40117d:	0f 1f 00             	nopl   (%rax)
+401180:	e9 bb 02 00 00       	jmpq   401440 <internal/cpu.processOptions+0x360>
+401185:	48 c7 c2 ff ff ff ff 	mov    $0xffffffffffffffff,%rdx
+40118c:	4c 89 44 24 50       	mov    %r8,0x50(%rsp)
+401191:	48 89 74 24 78       	mov    %rsi,0x78(%rsp)
+401196:	48 85 d2             	test   %rdx,%rdx
+401199:	0f 8c 5a 01 00 00    	jl     4012f9 <internal/cpu.processOptions+0x219>
+40119f:	90                   	nop
+4011a0:	48 39 ca             	cmp    %rcx,%rdx
+4011a3:	0f 87 49 04 00 00    	ja     4015f2 <internal/cpu.processOptions+0x512>
+4011a9:	48 83 fa 04          	cmp    $0x4,%rdx
+4011ad:	0f 82 32 04 00 00    	jb     4015e5 <internal/cpu.processOptions+0x505>
+4011b3:	48 8d 7a fc          	lea    -0x4(%rdx),%rdi
+4011b7:	49 89 f9             	mov    %rdi,%r9
+4011ba:	48 f7 df             	neg    %rdi
+4011bd:	48 c1 ff 3f          	sar    $0x3f,%rdi
+4011c1:	83 e7 04             	and    $0x4,%edi
+4011c4:	48 8d 1c 38          	lea    (%rax,%rdi,1),%rbx
+4011c8:	4c 8d 52 01          	lea    0x1(%rdx),%r10
+4011cc:	4c 39 d1             	cmp    %r10,%rcx
+4011cf:	0f 82 07 04 00 00    	jb     4015dc <internal/cpu.processOptions+0x4fc>
+4011d5:	4c 89 4c 24 48       	mov    %r9,0x48(%rsp)
+4011da:	48 89 5c 24 60       	mov    %rbx,0x60(%rsp)
+4011df:	48 29 d1             	sub    %rdx,%rcx
+4011e2:	4c 8d 59 ff          	lea    -0x1(%rcx),%r11
+4011e6:	4c 89 5c 24 20       	mov    %r11,0x20(%rsp)
+4011eb:	4d 89 dc             	mov    %r11,%r12
+4011ee:	49 f7 db             	neg    %r11
+4011f1:	49 c1 fb 3f          	sar    $0x3f,%r11
+4011f5:	4d 21 da             	and    %r11,%r10
+4011f8:	4e 8d 1c 10          	lea    (%rax,%r10,1),%r11
+4011fc:	4c 89 5c 24 58       	mov    %r11,0x58(%rsp)
+401201:	48 83 f9 03          	cmp    $0x3,%rcx
+401205:	75 19                	jne    401220 <internal/cpu.processOptions+0x140>
+401207:	46 0f b7 14 10       	movzwl (%rax,%r10,1),%r10d
+40120c:	66 41 81 fa 6f 6e    	cmp    $0x6e6f,%r10w
+401212:	75 78                	jne    40128c <internal/cpu.processOptions+0x1ac>
+401214:	48 83 f9 03          	cmp    $0x3,%rcx
+401218:	eb 29                	jmp    401243 <internal/cpu.processOptions+0x163>
+40121a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+401220:	48 83 f9 04          	cmp    $0x4,%rcx
+401224:	75 66                	jne    40128c <internal/cpu.processOptions+0x1ac>
+401226:	46 0f b7 2c 10       	movzwl (%rax,%r10,1),%r13d
+40122b:	66 41 81 fd 6f 66    	cmp    $0x666f,%r13w
+401231:	75 59                	jne    40128c <internal/cpu.processOptions+0x1ac>
+401233:	46 0f b6 54 10 02    	movzbl 0x2(%rax,%r10,1),%r10d
+401239:	41 80 fa 66          	cmp    $0x66,%r10b
+40123d:	75 4d                	jne    40128c <internal/cpu.processOptions+0x1ac>
+40123f:	48 83 f9 03          	cmp    $0x3,%rcx
+401243:	41 0f 94 c2          	sete   %r10b
+401247:	48 83 fa 07          	cmp    $0x7,%rdx
+40124b:	75 27                	jne    401274 <internal/cpu.processOptions+0x194>
+40124d:	44 0f b7 1c 38       	movzwl (%rax,%rdi,1),%r11d
+401252:	66 41 81 fb 61 6c    	cmp    $0x6c61,%r11w
+401258:	75 1a                	jne    401274 <internal/cpu.processOptions+0x194>
+40125a:	0f b6 7c 38 02       	movzbl 0x2(%rax,%rdi,1),%edi
+40125f:	90                   	nop
+401260:	40 80 ff 6c          	cmp    $0x6c,%dil
+401264:	75 0e                	jne    401274 <internal/cpu.processOptions+0x194>
+401266:	48 8b 3d 7b 11 21 00 	mov    0x21117b(%rip),%rdi        # 6123e8 <internal/cpu.options+0x8>
+40126d:	31 c0                	xor    %eax,%eax
+40126f:	e9 1f 03 00 00       	jmpq   401593 <internal/cpu.processOptions+0x4b3>
+401274:	44 88 54 24 1f       	mov    %r10b,0x1f(%rsp)
+401279:	48 8b 15 68 11 21 00 	mov    0x211168(%rip),%rdx        # 6123e8 <internal/cpu.options+0x8>
+401280:	48 89 54 24 40       	mov    %rdx,0x40(%rsp)
+401285:	31 c0                	xor    %eax,%eax
+401287:	e9 d4 01 00 00       	jmpq   401460 <internal/cpu.processOptions+0x380>
+40128c:	e8 0f 72 03 00       	callq  4384a0 <runtime.printlock>
+401291:	48 8d 05 9e 55 12 00 	lea    0x12559e(%rip),%rax        # 526836 <go.string.*+0x2d5e>
+401298:	bb 10 00 00 00       	mov    $0x10,%ebx
+40129d:	0f 1f 00             	nopl   (%rax)
+4012a0:	e8 fb 7a 03 00       	callq  438da0 <runtime.printstring>
+4012a5:	48 8b 44 24 58       	mov    0x58(%rsp),%rax
+4012aa:	48 8b 5c 24 20       	mov    0x20(%rsp),%rbx
+4012af:	e8 ec 7a 03 00       	callq  438da0 <runtime.printstring>
+4012b4:	48 8d 05 6b af 12 00 	lea    0x12af6b(%rip),%rax        # 52c226 <go.string.*+0x874e>
+4012bb:	bb 20 00 00 00       	mov    $0x20,%ebx
+4012c0:	e8 db 7a 03 00       	callq  438da0 <runtime.printstring>
+4012c5:	48 8b 44 24 60       	mov    0x60(%rsp),%rax
+4012ca:	48 8b 5c 24 48       	mov    0x48(%rsp),%rbx
+4012cf:	e8 cc 7a 03 00       	callq  438da0 <runtime.printstring>
+4012d4:	48 8d 05 81 28 12 00 	lea    0x122881(%rip),%rax        # 523b5c <go.string.*+0x84>
+4012db:	bb 02 00 00 00       	mov    $0x2,%ebx
+4012e0:	e8 bb 7a 03 00       	callq  438da0 <runtime.printstring>
+4012e5:	e8 36 72 03 00       	callq  438520 <runtime.printunlock>
+4012ea:	48 8b 74 24 78       	mov    0x78(%rsp),%rsi
+4012ef:	4c 8b 44 24 50       	mov    0x50(%rsp),%r8
+4012f4:	e9 17 fe ff ff       	jmpq   401110 <internal/cpu.processOptions+0x30>
+4012f9:	48 89 4c 24 28       	mov    %rcx,0x28(%rsp)
+4012fe:	48 89 44 24 68       	mov    %rax,0x68(%rsp)
+401303:	e8 98 71 03 00       	callq  4384a0 <runtime.printlock>
+401308:	48 8d 05 5b b3 12 00 	lea    0x12b35b(%rip),%rax        # 52c66a <go.string.*+0x8b92>
+40130f:	bb 21 00 00 00       	mov    $0x21,%ebx
+401314:	e8 87 7a 03 00       	callq  438da0 <runtime.printstring>
+401319:	48 8b 44 24 68       	mov    0x68(%rsp),%rax
+40131e:	48 8b 5c 24 28       	mov    0x28(%rsp),%rbx
+401323:	e8 78 7a 03 00       	callq  438da0 <runtime.printstring>
+401328:	48 8d 05 2d 28 12 00 	lea    0x12282d(%rip),%rax        # 523b5c <go.string.*+0x84>
+40132f:	bb 02 00 00 00       	mov    $0x2,%ebx
+401334:	e8 67 7a 03 00       	callq  438da0 <runtime.printstring>
+401339:	e8 e2 71 03 00       	callq  438520 <runtime.printunlock>
+40133e:	48 8b 74 24 78       	mov    0x78(%rsp),%rsi
+401343:	4c 8b 44 24 50       	mov    0x50(%rsp),%r8
+401348:	e9 c3 fd ff ff       	jmpq   401110 <internal/cpu.processOptions+0x30>
+40134d:	48 8b 05 94 10 21 00 	mov    0x211094(%rip),%rax        # 6123e8 <internal/cpu.options+0x8>
+401354:	48 8b 0d 85 10 21 00 	mov    0x211085(%rip),%rcx        # 6123e0 <internal/cpu.options>
+40135b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+401360:	48 85 c0             	test   %rax,%rax
+401363:	74 09                	je     40136e <internal/cpu.processOptions+0x28e>
+401365:	48 89 44 24 50       	mov    %rax,0x50(%rsp)
+40136a:	31 d2                	xor    %edx,%edx
+40136c:	eb 14                	jmp    401382 <internal/cpu.processOptions+0x2a2>
+40136e:	48 8b ac 24 80 00 00 	mov    0x80(%rsp),%rbp
+401375:	00
+401376:	48 81 c4 88 00 00 00 	add    $0x88,%rsp
+40137d:	c3                   	retq
+40137e:	48 83 c1 20          	add    $0x20,%rcx
+401382:	0f b6 59 19          	movzbl 0x19(%rcx),%ebx
+401386:	48 8b 71 10          	mov    0x10(%rcx),%rsi
+40138a:	48 8b 39             	mov    (%rcx),%rdi
+40138d:	4c 8b 41 08          	mov    0x8(%rcx),%r8
+401391:	80 79 18 00          	cmpb   $0x0,0x18(%rcx)
+401395:	74 6d                	je     401404 <internal/cpu.processOptions+0x324>
+401397:	84 db                	test   %bl,%bl
+401399:	74 67                	je     401402 <internal/cpu.processOptions+0x322>
+40139b:	80 3e 00             	cmpb   $0x0,(%rsi)
+40139e:	66 90                	xchg   %ax,%ax
+4013a0:	75 60                	jne    401402 <internal/cpu.processOptions+0x322>
+4013a2:	4c 89 44 24 48       	mov    %r8,0x48(%rsp)
+4013a7:	48 89 7c 24 78       	mov    %rdi,0x78(%rsp)
+4013ac:	48 89 54 24 40       	mov    %rdx,0x40(%rsp)
+4013b1:	48 89 4c 24 70       	mov    %rcx,0x70(%rsp)
+4013b6:	e8 e5 70 03 00       	callq  4384a0 <runtime.printlock>
+4013bb:	48 8d 05 02 8a 12 00 	lea    0x128a02(%rip),%rax        # 529dc4 <go.string.*+0x62ec>
+4013c2:	bb 19 00 00 00       	mov    $0x19,%ebx
+4013c7:	e8 d4 79 03 00       	callq  438da0 <runtime.printstring>
+4013cc:	48 8b 44 24 78       	mov    0x78(%rsp),%rax
+4013d1:	48 8b 5c 24 48       	mov    0x48(%rsp),%rbx
+4013d6:	e8 c5 79 03 00       	callq  438da0 <runtime.printstring>
+4013db:	48 8d 05 9a 7f 12 00 	lea    0x127f9a(%rip),%rax        # 52937c <go.string.*+0x58a4>
+4013e2:	bb 17 00 00 00       	mov    $0x17,%ebx
+4013e7:	e8 b4 79 03 00       	callq  438da0 <runtime.printstring>
+4013ec:	e8 2f 71 03 00       	callq  438520 <runtime.printunlock>
+4013f1:	48 8b 44 24 50       	mov    0x50(%rsp),%rax
+4013f6:	48 8b 4c 24 70       	mov    0x70(%rsp),%rcx
+4013fb:	48 8b 54 24 40       	mov    0x40(%rsp),%rdx
+401400:	eb 02                	jmp    401404 <internal/cpu.processOptions+0x324>
+401402:	88 1e                	mov    %bl,(%rsi)
+401404:	48 ff c2             	inc    %rdx
+401407:	48 39 d0             	cmp    %rdx,%rax
+40140a:	0f 8f 6e ff ff ff    	jg     40137e <internal/cpu.processOptions+0x29e>
+401410:	e9 59 ff ff ff       	jmpq   40136e <internal/cpu.processOptions+0x28e>
+401415:	48 ff c1             	inc    %rcx
+401418:	0f 1f 84 00 00 00 00 	nopl   0x0(%rax,%rax,1)
+40141f:	00
+401420:	48 39 d9             	cmp    %rbx,%rcx
+401423:	0f 8d fd fc ff ff    	jge    401126 <internal/cpu.processOptions+0x46>
+401429:	0f b6 34 08          	movzbl (%rax,%rcx,1),%esi
+40142d:	40 80 fe 2c          	cmp    $0x2c,%sil
+401431:	75 e2                	jne    401415 <internal/cpu.processOptions+0x335>
+401433:	e9 f5 fc ff ff       	jmpq   40112d <internal/cpu.processOptions+0x4d>
+401438:	48 ff c2             	inc    %rdx
+40143b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+401440:	48 39 ca             	cmp    %rcx,%rdx
+401443:	0f 8d 3c fd ff ff    	jge    401185 <internal/cpu.processOptions+0xa5>
+401449:	0f b6 3c 10          	movzbl (%rax,%rdx,1),%edi
+40144d:	40 80 ff 3d          	cmp    $0x3d,%dil
+401451:	75 e5                	jne    401438 <internal/cpu.processOptions+0x358>
+401453:	e9 34 fd ff ff       	jmpq   40118c <internal/cpu.processOptions+0xac>
+401458:	49 8d 43 01          	lea    0x1(%r11),%rax
+40145c:	0f 1f 40 00          	nopl   0x0(%rax)
+401460:	48 39 d0             	cmp    %rdx,%rax
+401463:	0f 8d c7 00 00 00    	jge    401530 <internal/cpu.processOptions+0x450>
+401469:	48 8b 3d 70 0f 21 00 	mov    0x210f70(%rip),%rdi        # 6123e0 <internal/cpu.options>
+401470:	48 8b 0d 71 0f 21 00 	mov    0x210f71(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>
+401477:	66 0f 1f 84 00 00 00 	nopw   0x0(%rax,%rax,1)
+40147e:	00 00
+401480:	48 39 c8             	cmp    %rcx,%rax
+401483:	0f 83 fc 00 00 00    	jae    401585 <internal/cpu.processOptions+0x4a5>
+401489:	49 89 c3             	mov    %rax,%r11
+40148c:	48 c1 e0 05          	shl    $0x5,%rax
+401490:	48 8b 4c 07 08       	mov    0x8(%rdi,%rax,1),%rcx
+401495:	48 8b 3c 07          	mov    (%rdi,%rax,1),%rdi
+401499:	4c 39 c9             	cmp    %r9,%rcx
+40149c:	75 ba                	jne    401458 <internal/cpu.processOptions+0x378>
+40149e:	48 89 44 24 38       	mov    %rax,0x38(%rsp)
+4014a3:	4c 89 5c 24 30       	mov    %r11,0x30(%rsp)
+4014a8:	48 89 f8             	mov    %rdi,%rax
+4014ab:	e8 50 15 00 00       	callq  402a00 <runtime.memequal>
+4014b0:	84 c0                	test   %al,%al
+4014b2:	75 29                	jne    4014dd <internal/cpu.processOptions+0x3fd>
+4014b4:	48 8b 54 24 40       	mov    0x40(%rsp),%rdx
+4014b9:	48 8b 5c 24 60       	mov    0x60(%rsp),%rbx
+4014be:	48 8b 74 24 78       	mov    0x78(%rsp),%rsi
+4014c3:	4c 8b 44 24 50       	mov    0x50(%rsp),%r8
+4014c8:	4c 8b 4c 24 48       	mov    0x48(%rsp),%r9
+4014cd:	44 0f b6 54 24 1f    	movzbl 0x1f(%rsp),%r10d
+4014d3:	4c 8b 5c 24 30       	mov    0x30(%rsp),%r11
+4014d8:	e9 7b ff ff ff       	jmpq   401458 <internal/cpu.processOptions+0x378>
+4014dd:	48 8b 0d 04 0f 21 00 	mov    0x210f04(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>
+4014e4:	48 8b 35 f5 0e 21 00 	mov    0x210ef5(%rip),%rsi        # 6123e0 <internal/cpu.options>
+4014eb:	48 8b 44 24 30       	mov    0x30(%rsp),%rax
+4014f0:	48 39 c8             	cmp    %rcx,%rax
+4014f3:	0f 83 87 00 00 00    	jae    401580 <internal/cpu.processOptions+0x4a0>
+4014f9:	48 8b 7c 24 38       	mov    0x38(%rsp),%rdi
+4014fe:	c6 44 3e 18 01       	movb   $0x1,0x18(%rsi,%rdi,1)
+401503:	48 8b 0d de 0e 21 00 	mov    0x210ede(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>
+40150a:	48 8b 35 cf 0e 21 00 	mov    0x210ecf(%rip),%rsi        # 6123e0 <internal/cpu.options>
+401511:	48 39 c8             	cmp    %rcx,%rax
+401514:	73 64                	jae    40157a <internal/cpu.processOptions+0x49a>
+401516:	44 0f b6 4c 24 1f    	movzbl 0x1f(%rsp),%r9d
+40151c:	44 88 4c 3e 19       	mov    %r9b,0x19(%rsi,%rdi,1)
+401521:	48 8b 74 24 78       	mov    0x78(%rsp),%rsi
+401526:	4c 8b 44 24 50       	mov    0x50(%rsp),%r8
+40152b:	e9 e0 fb ff ff       	jmpq   401110 <internal/cpu.processOptions+0x30>
+401530:	e8 6b 6f 03 00       	callq  4384a0 <runtime.printlock>
+401535:	48 8d 05 8a a4 12 00 	lea    0x12a48a(%rip),%rax        # 52b9c6 <go.string.*+0x7eee>
+40153c:	bb 1e 00 00 00       	mov    $0x1e,%ebx
+401541:	e8 5a 78 03 00       	callq  438da0 <runtime.printstring>
+401546:	48 8b 44 24 60       	mov    0x60(%rsp),%rax
+40154b:	48 8b 5c 24 48       	mov    0x48(%rsp),%rbx
+401550:	e8 4b 78 03 00       	callq  438da0 <runtime.printstring>
+401555:	48 8d 05 00 26 12 00 	lea    0x122600(%rip),%rax        # 523b5c <go.string.*+0x84>
+40155c:	bb 02 00 00 00       	mov    $0x2,%ebx
+401561:	e8 3a 78 03 00       	callq  438da0 <runtime.printstring>
+401566:	e8 b5 6f 03 00       	callq  438520 <runtime.printunlock>
+40156b:	48 8b 74 24 78       	mov    0x78(%rsp),%rsi
+401570:	4c 8b 44 24 50       	mov    0x50(%rsp),%r8
+401575:	e9 96 fb ff ff       	jmpq   401110 <internal/cpu.processOptions+0x30>
+40157a:	e8 e1 1f 06 00       	callq  463560 <runtime.panicIndex>
+40157f:	90                   	nop
+401580:	e8 db 1f 06 00       	callq  463560 <runtime.panicIndex>
+401585:	e8 d6 1f 06 00       	callq  463560 <runtime.panicIndex>
+40158a:	45 88 54 01 19       	mov    %r10b,0x19(%r9,%rax,1)
+40158f:	49 8d 43 01          	lea    0x1(%r11),%rax
+401593:	48 39 f8             	cmp    %rdi,%rax
+401596:	0f 8d 74 fb ff ff    	jge    401110 <internal/cpu.processOptions+0x30>
+40159c:	48 8b 0d 45 0e 21 00 	mov    0x210e45(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>
+4015a3:	4c 8b 0d 36 0e 21 00 	mov    0x210e36(%rip),%r9        # 6123e0 <internal/cpu.options>
+4015aa:	48 39 c8             	cmp    %rcx,%rax
+4015ad:	73 28                	jae    4015d7 <internal/cpu.processOptions+0x4f7>
+4015af:	49 89 c3             	mov    %rax,%r11
+4015b2:	48 c1 e0 05          	shl    $0x5,%rax
+4015b6:	41 c6 44 01 18 01    	movb   $0x1,0x18(%r9,%rax,1)
+4015bc:	48 8b 0d 25 0e 21 00 	mov    0x210e25(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>
+4015c3:	4c 8b 0d 16 0e 21 00 	mov    0x210e16(%rip),%r9        # 6123e0 <internal/cpu.options>
+4015ca:	49 39 cb             	cmp    %rcx,%r11
+4015cd:	72 bb                	jb     40158a <internal/cpu.processOptions+0x4aa>
+4015cf:	4c 89 d8             	mov    %r11,%rax
+4015d2:	e8 89 1f 06 00       	callq  463560 <runtime.panicIndex>
+4015d7:	e8 84 1f 06 00       	callq  463560 <runtime.panicIndex>
+4015dc:	4c 89 d0             	mov    %r10,%rax
+4015df:	90                   	nop
+4015e0:	e8 3b 20 06 00       	callq  463620 <runtime.panicSliceB>
+4015e5:	b8 04 00 00 00       	mov    $0x4,%eax
+4015ea:	48 89 d1             	mov    %rdx,%rcx
+4015ed:	e8 2e 20 06 00       	callq  463620 <runtime.panicSliceB>
+4015f2:	48 89 c8             	mov    %rcx,%rax
+4015f5:	48 89 d1             	mov    %rdx,%rcx
+4015f8:	48 89 c2             	mov    %rax,%rdx
+4015fb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+401600:	e8 9b 1f 06 00       	callq  4635a0 <runtime.panicSliceAlen>
+401605:	48 89 f0             	mov    %rsi,%rax
+401608:	48 89 d9             	mov    %rbx,%rcx
+40160b:	e8 10 20 06 00       	callq  463620 <runtime.panicSliceB>
+401610:	48 89 da             	mov    %rbx,%rdx
+401613:	e8 88 1f 06 00       	callq  4635a0 <runtime.panicSliceAlen>
+401618:	90                   	nop
+401619:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+40161e:	48 89 5c 24 10       	mov    %rbx,0x10(%rsp)
+401623:	e8 58 f8 05 00       	callq  460e80 <runtime.morestack_noctxt.abi0>
+401628:	48 8b 44 24 08       	mov    0x8(%rsp),%rax
+40162d:	48 8b 5c 24 10       	mov    0x10(%rsp),%rbx
+401632:	e9 a9 fa ff ff       	jmpq   4010e0 <internal/cpu.processOptions>
+401637:	cc                   	int3
+401638:	cc                   	int3
+401639:	cc                   	int3
+40163a:	cc                   	int3
+40163b:	cc                   	int3
+40163c:	cc                   	int3
+40163d:	cc                   	int3
+40163e:	cc                   	int3
+40163f:	cc                   	int3

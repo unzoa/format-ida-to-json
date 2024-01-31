@@ -1,0 +1,73 @@
+ 401000:	ff 20                	jmpq   *(%rax)
+  401002:	47 6f                	rex.RXB outsl %ds:(%rsi),(%dx)
+  401004:	20 62 75             	and    %ah,0x75(%rdx)
+  401007:	69 6c 64 20 49 44 3a 	imul   $0x203a4449,0x20(%rsp,%riz,2),%ebp
+  40100e:	20
+  40100f:	22 51 67             	and    0x67(%rcx),%dl
+  401012:	79 65                	jns    401079 <go.buildid+0x79>
+  401014:	4a 71 5f             	rex.WX jno 401076 <go.buildid+0x76>
+  401017:	4e                   	rex.WRX
+  401018:	46                   	rex.RX
+  401019:	4c 70 58             	rex.WR jo 401074 <go.buildid+0x74>
+  40101c:	52                   	push   %rdx
+  40101d:	6a 76                	pushq  $0x76
+  40101f:	58                   	pop    %rax
+  401020:	62                   	(bad)
+  401021:	6a 42                	pushq  $0x42
+  401023:	32 2f                	xor    (%rdi),%ch
+  401025:	4f 74 6e             	rex.WRXB je 401096 <internal/cpu.Initialize+0x16>
+  401028:	37                   	(bad)
+  401029:	34 68                	xor    $0x68,%al
+  40102b:	4d 6e                	rex.WRB outsb %ds:(%rsi),(%dx)
+  40102d:	76 6c                	jbe    40109b <internal/cpu.Initialize+0x1b>
+  40102f:	41                   	rex.B
+  401030:	45 5f                	rex.RB pop %r15
+  401032:	4c 6b 53 6d 59       	imul   $0x59,0x6d(%rbx),%r10
+  401037:	6e                   	outsb  %ds:(%rsi),(%dx)
+  401038:	39 2f                	cmp    %ebp,(%rdi)
+  40103a:	6f                   	outsl  %ds:(%rsi),(%dx)
+  40103b:	4a 70 49             	rex.WX jo 401087 <internal/cpu.Initialize+0x7>
+  40103e:	43                   	rex.XB
+  40103f:	4e 70 51             	rex.WRX jo 401093 <internal/cpu.Initialize+0x13>
+  401042:	50                   	push   %rax
+  401043:	79 4a                	jns    40108f <internal/cpu.Initialize+0xf>
+  401045:	62                   	(bad)
+  401046:	6b 79 78 4c          	imul   $0x4c,0x78(%rcx),%edi
+  40104a:	6a 6e                	pushq  $0x6e
+  40104c:	72 38                	jb     401086 <internal/cpu.Initialize+0x6>
+  40104e:	2f                   	(bad)
+  40104f:	78 4d                	js     40109e <internal/cpu.Initialize+0x1e>
+  401051:	4e 5a                	rex.WRX pop %rdx
+  401053:	64 77 6e             	fs ja  4010c4 <internal/cpu.Initialize+0x44>
+  401056:	7a 41                	jp     401099 <internal/cpu.Initialize+0x19>
+  401058:	6e                   	outsb  %ds:(%rsi),(%dx)
+  401059:	68 63 67 4c 4d       	pushq  $0x4d4c6763
+  40105e:	77 58                	ja     4010b8 <internal/cpu.Initialize+0x38>
+  401060:	38 6e 63             	cmp    %ch,0x63(%rsi)
+  401063:	22 0a                	and    (%rdx),%cl
+  401065:	20 ff                	and    %bh,%bh
+  401067:	cc                   	int3
+  401068:	cc                   	int3
+  401069:	cc                   	int3
+  40106a:	cc                   	int3
+  40106b:	cc                   	int3
+  40106c:	cc                   	int3
+  40106d:	cc                   	int3
+  40106e:	cc                   	int3
+  40106f:	cc                   	int3
+  401070:	cc                   	int3
+  401071:	cc                   	int3
+  401072:	cc                   	int3
+  401073:	cc                   	int3
+  401074:	cc                   	int3
+  401075:	cc                   	int3
+  401076:	cc                   	int3
+  401077:	cc                   	int3
+  401078:	cc                   	int3
+  401079:	cc                   	int3
+  40107a:	cc                   	int3
+  40107b:	cc                   	int3
+  40107c:	cc                   	int3
+  40107d:	cc                   	int3
+  40107e:	cc                   	int3
+  40107f:	cc                   	int3

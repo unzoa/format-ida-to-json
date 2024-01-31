@@ -1,0 +1,28 @@
+401080:	49 3b 66 10          	cmp    0x10(%r14),%rsp
+401084:	76 38                	jbe    4010be <internal/cpu.Initialize+0x3e>
+401086:	48 83 ec 18          	sub    $0x18,%rsp
+40108a:	48 89 6c 24 10       	mov    %rbp,0x10(%rsp)
+40108f:	48 8d 6c 24 10       	lea    0x10(%rsp),%rbp
+401094:	48 89 44 24 20       	mov    %rax,0x20(%rsp)
+401099:	48 89 5c 24 28       	mov    %rbx,0x28(%rsp)
+40109e:	66 90                	xchg   %ax,%ax
+4010a0:	e8 9b 05 00 00       	callq  401640 <internal/cpu.doinit>
+4010a5:	48 8b 44 24 20       	mov    0x20(%rsp),%rax
+4010aa:	48 8b 5c 24 28       	mov    0x28(%rsp),%rbx
+4010af:	e8 2c 00 00 00       	callq  4010e0 <internal/cpu.processOptions>
+4010b4:	48 8b 6c 24 10       	mov    0x10(%rsp),%rbp
+4010b9:	48 83 c4 18          	add    $0x18,%rsp
+4010bd:	c3                   	retq
+4010be:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+4010c3:	48 89 5c 24 10       	mov    %rbx,0x10(%rsp)
+4010c8:	e8 b3 fd 05 00       	callq  460e80 <runtime.morestack_noctxt.abi0>
+4010cd:	48 8b 44 24 08       	mov    0x8(%rsp),%rax
+4010d2:	48 8b 5c 24 10       	mov    0x10(%rsp),%rbx
+4010d7:	eb a7                	jmp    401080 <internal/cpu.Initialize>
+4010d9:	cc                   	int3
+4010da:	cc                   	int3
+4010db:	cc                   	int3
+4010dc:	cc                   	int3
+4010dd:	cc                   	int3
+4010de:	cc                   	int3
+4010df:	cc                   	int3

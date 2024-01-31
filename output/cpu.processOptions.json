@@ -1,0 +1,1826 @@
+[
+  {
+    "address": "4010e0",
+    "opcode": "4c 8d 64 24 f8       ",
+    "mnemonic": "lea",
+    "operands": "-0x8(%rsp),%r12"
+  },
+  {
+    "address": "4010e5",
+    "opcode": "4d 3b 66 10          ",
+    "mnemonic": "cmp",
+    "operands": "0x10(%r14),%r12"
+  },
+  {
+    "address": "4010e9",
+    "opcode": "0f 86 2a 05 00 00    ",
+    "mnemonic": "jbe",
+    "operands": "401619 <internal/cpu.processOptions+0x539>"
+  },
+  {
+    "address": "4010ef",
+    "opcode": "48 81 ec 88 00 00 00 ",
+    "mnemonic": "sub",
+    "operands": "$0x88,%rsp"
+  },
+  {
+    "address": "4010f6",
+    "opcode": "48 89 ac 24 80 00 00 ",
+    "mnemonic": "mov",
+    "operands": "%rbp,0x80(%rsp)"
+  },
+  {
+    "address": "4010fe",
+    "opcode": "48 8d ac 24 80 00 00 ",
+    "mnemonic": "lea",
+    "operands": "0x80(%rsp),%rbp"
+  },
+  {
+    "address": "401106",
+    "opcode": "48 89 84 24 90 00 00 ",
+    "mnemonic": "mov",
+    "operands": "%rax,0x90(%rsp)"
+  },
+  {
+    "address": "40110e",
+    "opcode": "eb 06                ",
+    "mnemonic": "jmp",
+    "operands": "401116 <internal/cpu.processOptions+0x36>"
+  },
+  {
+    "address": "401110",
+    "opcode": "48 89 f0             ",
+    "mnemonic": "mov",
+    "operands": "%rsi,%rax"
+  },
+  {
+    "address": "401113",
+    "opcode": "4c 89 c3             ",
+    "mnemonic": "mov",
+    "operands": "%r8,%rbx"
+  },
+  {
+    "address": "401116",
+    "opcode": "48 85 db             ",
+    "mnemonic": "test",
+    "operands": "%rbx,%rbx"
+  },
+  {
+    "address": "401119",
+    "opcode": "0f 84 2e 02 00 00    ",
+    "mnemonic": "je",
+    "operands": "40134d <internal/cpu.processOptions+0x26d>"
+  },
+  {
+    "address": "40111f",
+    "opcode": "31 c9                ",
+    "mnemonic": "xor",
+    "operands": "%ecx,%ecx"
+  },
+  {
+    "address": "401121",
+    "opcode": "e9 fa 02 00 00       ",
+    "mnemonic": "jmpq",
+    "operands": "401420 <internal/cpu.processOptions+0x340>"
+  },
+  {
+    "address": "401126",
+    "opcode": "48 c7 c1 ff ff ff ff ",
+    "mnemonic": "mov",
+    "operands": "$0xffffffffffffffff,%rcx"
+  },
+  {
+    "address": "40112d",
+    "opcode": "48 85 c9             ",
+    "mnemonic": "test",
+    "operands": "%rcx,%rcx"
+  },
+  {
+    "address": "401130",
+    "opcode": "7d 0e                ",
+    "mnemonic": "jge",
+    "operands": "401140 <internal/cpu.processOptions+0x60>"
+  },
+  {
+    "address": "401132",
+    "opcode": "45 31 c0             ",
+    "mnemonic": "xor",
+    "operands": "%r8d,%r8d"
+  },
+  {
+    "address": "401135",
+    "opcode": "31 f6                ",
+    "mnemonic": "xor",
+    "operands": "%esi,%esi"
+  },
+  {
+    "address": "401137",
+    "opcode": "48 89 d9             ",
+    "mnemonic": "mov",
+    "operands": "%rbx,%rcx"
+  },
+  {
+    "address": "40113a",
+    "opcode": "eb 31                ",
+    "mnemonic": "jmp",
+    "operands": "40116d <internal/cpu.processOptions+0x8d>"
+  },
+  {
+    "address": "40113c",
+    "opcode": "0f 1f 40 00          ",
+    "mnemonic": "nopl",
+    "operands": "0x0(%rax)"
+  },
+  {
+    "address": "401140",
+    "opcode": "48 39 d9             ",
+    "mnemonic": "cmp",
+    "operands": "%rbx,%rcx"
+  },
+  {
+    "address": "401143",
+    "opcode": "0f 87 c7 04 00 00    ",
+    "mnemonic": "ja",
+    "operands": "401610 <internal/cpu.processOptions+0x530>"
+  },
+  {
+    "address": "401149",
+    "opcode": "48 8d 71 01          ",
+    "mnemonic": "lea",
+    "operands": "0x1(%rcx),%rsi"
+  },
+  {
+    "address": "40114d",
+    "opcode": "48 39 f3             ",
+    "mnemonic": "cmp",
+    "operands": "%rsi,%rbx"
+  },
+  {
+    "address": "401150",
+    "opcode": "0f 82 af 04 00 00    ",
+    "mnemonic": "jb",
+    "operands": "401605 <internal/cpu.processOptions+0x525>"
+  },
+  {
+    "address": "401156",
+    "opcode": "48 29 cb             ",
+    "mnemonic": "sub",
+    "operands": "%rcx,%rbx"
+  },
+  {
+    "address": "401159",
+    "opcode": "48 8d 7b ff          ",
+    "mnemonic": "lea",
+    "operands": "-0x1(%rbx),%rdi"
+  },
+  {
+    "address": "40115d",
+    "opcode": "49 89 f8             ",
+    "mnemonic": "mov",
+    "operands": "%rdi,%r8"
+  },
+  {
+    "address": "401160",
+    "opcode": "48 f7 df             ",
+    "mnemonic": "neg",
+    "operands": "%rdi"
+  },
+  {
+    "address": "401163",
+    "opcode": "48 c1 ff 3f          ",
+    "mnemonic": "sar",
+    "operands": "$0x3f,%rdi"
+  },
+  {
+    "address": "401167",
+    "opcode": "48 21 fe             ",
+    "mnemonic": "and",
+    "operands": "%rdi,%rsi"
+  },
+  {
+    "address": "40116a",
+    "opcode": "48 01 c6             ",
+    "mnemonic": "add",
+    "operands": "%rax,%rsi"
+  },
+  {
+    "address": "40116d",
+    "opcode": "48 83 f9 04          ",
+    "mnemonic": "cmp",
+    "operands": "$0x4,%rcx"
+  },
+  {
+    "address": "401171",
+    "opcode": "7c 9d                ",
+    "mnemonic": "jl",
+    "operands": "401110 <internal/cpu.processOptions+0x30>"
+  },
+  {
+    "address": "401173",
+    "opcode": "81 38 63 70 75 2e    ",
+    "mnemonic": "cmpl",
+    "operands": "$0x2e757063,(%rax)"
+  },
+  {
+    "address": "401179",
+    "opcode": "75 95                ",
+    "mnemonic": "jne",
+    "operands": "401110 <internal/cpu.processOptions+0x30>"
+  },
+  {
+    "address": "40117b",
+    "opcode": "31 d2                ",
+    "mnemonic": "xor",
+    "operands": "%edx,%edx"
+  },
+  {
+    "address": "40117d",
+    "opcode": "0f 1f 00             ",
+    "mnemonic": "nopl",
+    "operands": "(%rax)"
+  },
+  {
+    "address": "401180",
+    "opcode": "e9 bb 02 00 00       ",
+    "mnemonic": "jmpq",
+    "operands": "401440 <internal/cpu.processOptions+0x360>"
+  },
+  {
+    "address": "401185",
+    "opcode": "48 c7 c2 ff ff ff ff ",
+    "mnemonic": "mov",
+    "operands": "$0xffffffffffffffff,%rdx"
+  },
+  {
+    "address": "40118c",
+    "opcode": "4c 89 44 24 50       ",
+    "mnemonic": "mov",
+    "operands": "%r8,0x50(%rsp)"
+  },
+  {
+    "address": "401191",
+    "opcode": "48 89 74 24 78       ",
+    "mnemonic": "mov",
+    "operands": "%rsi,0x78(%rsp)"
+  },
+  {
+    "address": "401196",
+    "opcode": "48 85 d2             ",
+    "mnemonic": "test",
+    "operands": "%rdx,%rdx"
+  },
+  {
+    "address": "401199",
+    "opcode": "0f 8c 5a 01 00 00    ",
+    "mnemonic": "jl",
+    "operands": "4012f9 <internal/cpu.processOptions+0x219>"
+  },
+  {
+    "address": "4011a0",
+    "opcode": "48 39 ca             ",
+    "mnemonic": "cmp",
+    "operands": "%rcx,%rdx"
+  },
+  {
+    "address": "4011a3",
+    "opcode": "0f 87 49 04 00 00    ",
+    "mnemonic": "ja",
+    "operands": "4015f2 <internal/cpu.processOptions+0x512>"
+  },
+  {
+    "address": "4011a9",
+    "opcode": "48 83 fa 04          ",
+    "mnemonic": "cmp",
+    "operands": "$0x4,%rdx"
+  },
+  {
+    "address": "4011ad",
+    "opcode": "0f 82 32 04 00 00    ",
+    "mnemonic": "jb",
+    "operands": "4015e5 <internal/cpu.processOptions+0x505>"
+  },
+  {
+    "address": "4011b3",
+    "opcode": "48 8d 7a fc          ",
+    "mnemonic": "lea",
+    "operands": "-0x4(%rdx),%rdi"
+  },
+  {
+    "address": "4011b7",
+    "opcode": "49 89 f9             ",
+    "mnemonic": "mov",
+    "operands": "%rdi,%r9"
+  },
+  {
+    "address": "4011ba",
+    "opcode": "48 f7 df             ",
+    "mnemonic": "neg",
+    "operands": "%rdi"
+  },
+  {
+    "address": "4011bd",
+    "opcode": "48 c1 ff 3f          ",
+    "mnemonic": "sar",
+    "operands": "$0x3f,%rdi"
+  },
+  {
+    "address": "4011c1",
+    "opcode": "83 e7 04             ",
+    "mnemonic": "and",
+    "operands": "$0x4,%edi"
+  },
+  {
+    "address": "4011c4",
+    "opcode": "48 8d 1c 38          ",
+    "mnemonic": "lea",
+    "operands": "(%rax,%rdi,1),%rbx"
+  },
+  {
+    "address": "4011c8",
+    "opcode": "4c 8d 52 01          ",
+    "mnemonic": "lea",
+    "operands": "0x1(%rdx),%r10"
+  },
+  {
+    "address": "4011cc",
+    "opcode": "4c 39 d1             ",
+    "mnemonic": "cmp",
+    "operands": "%r10,%rcx"
+  },
+  {
+    "address": "4011cf",
+    "opcode": "0f 82 07 04 00 00    ",
+    "mnemonic": "jb",
+    "operands": "4015dc <internal/cpu.processOptions+0x4fc>"
+  },
+  {
+    "address": "4011d5",
+    "opcode": "4c 89 4c 24 48       ",
+    "mnemonic": "mov",
+    "operands": "%r9,0x48(%rsp)"
+  },
+  {
+    "address": "4011da",
+    "opcode": "48 89 5c 24 60       ",
+    "mnemonic": "mov",
+    "operands": "%rbx,0x60(%rsp)"
+  },
+  {
+    "address": "4011df",
+    "opcode": "48 29 d1             ",
+    "mnemonic": "sub",
+    "operands": "%rdx,%rcx"
+  },
+  {
+    "address": "4011e2",
+    "opcode": "4c 8d 59 ff          ",
+    "mnemonic": "lea",
+    "operands": "-0x1(%rcx),%r11"
+  },
+  {
+    "address": "4011e6",
+    "opcode": "4c 89 5c 24 20       ",
+    "mnemonic": "mov",
+    "operands": "%r11,0x20(%rsp)"
+  },
+  {
+    "address": "4011eb",
+    "opcode": "4d 89 dc             ",
+    "mnemonic": "mov",
+    "operands": "%r11,%r12"
+  },
+  {
+    "address": "4011ee",
+    "opcode": "49 f7 db             ",
+    "mnemonic": "neg",
+    "operands": "%r11"
+  },
+  {
+    "address": "4011f1",
+    "opcode": "49 c1 fb 3f          ",
+    "mnemonic": "sar",
+    "operands": "$0x3f,%r11"
+  },
+  {
+    "address": "4011f5",
+    "opcode": "4d 21 da             ",
+    "mnemonic": "and",
+    "operands": "%r11,%r10"
+  },
+  {
+    "address": "4011f8",
+    "opcode": "4e 8d 1c 10          ",
+    "mnemonic": "lea",
+    "operands": "(%rax,%r10,1),%r11"
+  },
+  {
+    "address": "4011fc",
+    "opcode": "4c 89 5c 24 58       ",
+    "mnemonic": "mov",
+    "operands": "%r11,0x58(%rsp)"
+  },
+  {
+    "address": "401201",
+    "opcode": "48 83 f9 03          ",
+    "mnemonic": "cmp",
+    "operands": "$0x3,%rcx"
+  },
+  {
+    "address": "401205",
+    "opcode": "75 19                ",
+    "mnemonic": "jne",
+    "operands": "401220 <internal/cpu.processOptions+0x140>"
+  },
+  {
+    "address": "401207",
+    "opcode": "46 0f b7 14 10       ",
+    "mnemonic": "movzwl",
+    "operands": "(%rax,%r10,1),%r10d"
+  },
+  {
+    "address": "40120c",
+    "opcode": "66 41 81 fa 6f 6e    ",
+    "mnemonic": "cmp",
+    "operands": "$0x6e6f,%r10w"
+  },
+  {
+    "address": "401212",
+    "opcode": "75 78                ",
+    "mnemonic": "jne",
+    "operands": "40128c <internal/cpu.processOptions+0x1ac>"
+  },
+  {
+    "address": "401214",
+    "opcode": "48 83 f9 03          ",
+    "mnemonic": "cmp",
+    "operands": "$0x3,%rcx"
+  },
+  {
+    "address": "401218",
+    "opcode": "eb 29                ",
+    "mnemonic": "jmp",
+    "operands": "401243 <internal/cpu.processOptions+0x163>"
+  },
+  {
+    "address": "40121a",
+    "opcode": "66 0f 1f 44 00 00    ",
+    "mnemonic": "nopw",
+    "operands": "0x0(%rax,%rax,1)"
+  },
+  {
+    "address": "401220",
+    "opcode": "48 83 f9 04          ",
+    "mnemonic": "cmp",
+    "operands": "$0x4,%rcx"
+  },
+  {
+    "address": "401224",
+    "opcode": "75 66                ",
+    "mnemonic": "jne",
+    "operands": "40128c <internal/cpu.processOptions+0x1ac>"
+  },
+  {
+    "address": "401226",
+    "opcode": "46 0f b7 2c 10       ",
+    "mnemonic": "movzwl",
+    "operands": "(%rax,%r10,1),%r13d"
+  },
+  {
+    "address": "40122b",
+    "opcode": "66 41 81 fd 6f 66    ",
+    "mnemonic": "cmp",
+    "operands": "$0x666f,%r13w"
+  },
+  {
+    "address": "401231",
+    "opcode": "75 59                ",
+    "mnemonic": "jne",
+    "operands": "40128c <internal/cpu.processOptions+0x1ac>"
+  },
+  {
+    "address": "401233",
+    "opcode": "46 0f b6 54 10 02    ",
+    "mnemonic": "movzbl",
+    "operands": "0x2(%rax,%r10,1),%r10d"
+  },
+  {
+    "address": "401239",
+    "opcode": "41 80 fa 66          ",
+    "mnemonic": "cmp",
+    "operands": "$0x66,%r10b"
+  },
+  {
+    "address": "40123d",
+    "opcode": "75 4d                ",
+    "mnemonic": "jne",
+    "operands": "40128c <internal/cpu.processOptions+0x1ac>"
+  },
+  {
+    "address": "40123f",
+    "opcode": "48 83 f9 03          ",
+    "mnemonic": "cmp",
+    "operands": "$0x3,%rcx"
+  },
+  {
+    "address": "401243",
+    "opcode": "41 0f 94 c2          ",
+    "mnemonic": "sete",
+    "operands": "%r10b"
+  },
+  {
+    "address": "401247",
+    "opcode": "48 83 fa 07          ",
+    "mnemonic": "cmp",
+    "operands": "$0x7,%rdx"
+  },
+  {
+    "address": "40124b",
+    "opcode": "75 27                ",
+    "mnemonic": "jne",
+    "operands": "401274 <internal/cpu.processOptions+0x194>"
+  },
+  {
+    "address": "40124d",
+    "opcode": "44 0f b7 1c 38       ",
+    "mnemonic": "movzwl",
+    "operands": "(%rax,%rdi,1),%r11d"
+  },
+  {
+    "address": "401252",
+    "opcode": "66 41 81 fb 61 6c    ",
+    "mnemonic": "cmp",
+    "operands": "$0x6c61,%r11w"
+  },
+  {
+    "address": "401258",
+    "opcode": "75 1a                ",
+    "mnemonic": "jne",
+    "operands": "401274 <internal/cpu.processOptions+0x194>"
+  },
+  {
+    "address": "40125a",
+    "opcode": "0f b6 7c 38 02       ",
+    "mnemonic": "movzbl",
+    "operands": "0x2(%rax,%rdi,1),%edi"
+  },
+  {
+    "address": "401260",
+    "opcode": "40 80 ff 6c          ",
+    "mnemonic": "cmp",
+    "operands": "$0x6c,%dil"
+  },
+  {
+    "address": "401264",
+    "opcode": "75 0e                ",
+    "mnemonic": "jne",
+    "operands": "401274 <internal/cpu.processOptions+0x194>"
+  },
+  {
+    "address": "401266",
+    "opcode": "48 8b 3d 7b 11 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x21117b(%rip),%rdi        # 6123e8 <internal/cpu.options+0x8>"
+  },
+  {
+    "address": "40126d",
+    "opcode": "31 c0                ",
+    "mnemonic": "xor",
+    "operands": "%eax,%eax"
+  },
+  {
+    "address": "40126f",
+    "opcode": "e9 1f 03 00 00       ",
+    "mnemonic": "jmpq",
+    "operands": "401593 <internal/cpu.processOptions+0x4b3>"
+  },
+  {
+    "address": "401274",
+    "opcode": "44 88 54 24 1f       ",
+    "mnemonic": "mov",
+    "operands": "%r10b,0x1f(%rsp)"
+  },
+  {
+    "address": "401279",
+    "opcode": "48 8b 15 68 11 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x211168(%rip),%rdx        # 6123e8 <internal/cpu.options+0x8>"
+  },
+  {
+    "address": "401280",
+    "opcode": "48 89 54 24 40       ",
+    "mnemonic": "mov",
+    "operands": "%rdx,0x40(%rsp)"
+  },
+  {
+    "address": "401285",
+    "opcode": "31 c0                ",
+    "mnemonic": "xor",
+    "operands": "%eax,%eax"
+  },
+  {
+    "address": "401287",
+    "opcode": "e9 d4 01 00 00       ",
+    "mnemonic": "jmpq",
+    "operands": "401460 <internal/cpu.processOptions+0x380>"
+  },
+  {
+    "address": "40128c",
+    "opcode": "e8 0f 72 03 00       ",
+    "mnemonic": "callq",
+    "operands": "4384a0 <runtime.printlock>"
+  },
+  {
+    "address": "401291",
+    "opcode": "48 8d 05 9e 55 12 00 ",
+    "mnemonic": "lea",
+    "operands": "0x12559e(%rip),%rax        # 526836 <go.string.*+0x2d5e>"
+  },
+  {
+    "address": "401298",
+    "opcode": "bb 10 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x10,%ebx"
+  },
+  {
+    "address": "40129d",
+    "opcode": "0f 1f 00             ",
+    "mnemonic": "nopl",
+    "operands": "(%rax)"
+  },
+  {
+    "address": "4012a0",
+    "opcode": "e8 fb 7a 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "4012a5",
+    "opcode": "48 8b 44 24 58       ",
+    "mnemonic": "mov",
+    "operands": "0x58(%rsp),%rax"
+  },
+  {
+    "address": "4012aa",
+    "opcode": "48 8b 5c 24 20       ",
+    "mnemonic": "mov",
+    "operands": "0x20(%rsp),%rbx"
+  },
+  {
+    "address": "4012af",
+    "opcode": "e8 ec 7a 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "4012b4",
+    "opcode": "48 8d 05 6b af 12 00 ",
+    "mnemonic": "lea",
+    "operands": "0x12af6b(%rip),%rax        # 52c226 <go.string.*+0x874e>"
+  },
+  {
+    "address": "4012bb",
+    "opcode": "bb 20 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x20,%ebx"
+  },
+  {
+    "address": "4012c0",
+    "opcode": "e8 db 7a 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "4012c5",
+    "opcode": "48 8b 44 24 60       ",
+    "mnemonic": "mov",
+    "operands": "0x60(%rsp),%rax"
+  },
+  {
+    "address": "4012ca",
+    "opcode": "48 8b 5c 24 48       ",
+    "mnemonic": "mov",
+    "operands": "0x48(%rsp),%rbx"
+  },
+  {
+    "address": "4012cf",
+    "opcode": "e8 cc 7a 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "4012d4",
+    "opcode": "48 8d 05 81 28 12 00 ",
+    "mnemonic": "lea",
+    "operands": "0x122881(%rip),%rax        # 523b5c <go.string.*+0x84>"
+  },
+  {
+    "address": "4012db",
+    "opcode": "bb 02 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x2,%ebx"
+  },
+  {
+    "address": "4012e0",
+    "opcode": "e8 bb 7a 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "4012e5",
+    "opcode": "e8 36 72 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438520 <runtime.printunlock>"
+  },
+  {
+    "address": "4012ea",
+    "opcode": "48 8b 74 24 78       ",
+    "mnemonic": "mov",
+    "operands": "0x78(%rsp),%rsi"
+  },
+  {
+    "address": "4012ef",
+    "opcode": "4c 8b 44 24 50       ",
+    "mnemonic": "mov",
+    "operands": "0x50(%rsp),%r8"
+  },
+  {
+    "address": "4012f4",
+    "opcode": "e9 17 fe ff ff       ",
+    "mnemonic": "jmpq",
+    "operands": "401110 <internal/cpu.processOptions+0x30>"
+  },
+  {
+    "address": "4012f9",
+    "opcode": "48 89 4c 24 28       ",
+    "mnemonic": "mov",
+    "operands": "%rcx,0x28(%rsp)"
+  },
+  {
+    "address": "4012fe",
+    "opcode": "48 89 44 24 68       ",
+    "mnemonic": "mov",
+    "operands": "%rax,0x68(%rsp)"
+  },
+  {
+    "address": "401303",
+    "opcode": "e8 98 71 03 00       ",
+    "mnemonic": "callq",
+    "operands": "4384a0 <runtime.printlock>"
+  },
+  {
+    "address": "401308",
+    "opcode": "48 8d 05 5b b3 12 00 ",
+    "mnemonic": "lea",
+    "operands": "0x12b35b(%rip),%rax        # 52c66a <go.string.*+0x8b92>"
+  },
+  {
+    "address": "40130f",
+    "opcode": "bb 21 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x21,%ebx"
+  },
+  {
+    "address": "401314",
+    "opcode": "e8 87 7a 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "401319",
+    "opcode": "48 8b 44 24 68       ",
+    "mnemonic": "mov",
+    "operands": "0x68(%rsp),%rax"
+  },
+  {
+    "address": "40131e",
+    "opcode": "48 8b 5c 24 28       ",
+    "mnemonic": "mov",
+    "operands": "0x28(%rsp),%rbx"
+  },
+  {
+    "address": "401323",
+    "opcode": "e8 78 7a 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "401328",
+    "opcode": "48 8d 05 2d 28 12 00 ",
+    "mnemonic": "lea",
+    "operands": "0x12282d(%rip),%rax        # 523b5c <go.string.*+0x84>"
+  },
+  {
+    "address": "40132f",
+    "opcode": "bb 02 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x2,%ebx"
+  },
+  {
+    "address": "401334",
+    "opcode": "e8 67 7a 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "401339",
+    "opcode": "e8 e2 71 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438520 <runtime.printunlock>"
+  },
+  {
+    "address": "40133e",
+    "opcode": "48 8b 74 24 78       ",
+    "mnemonic": "mov",
+    "operands": "0x78(%rsp),%rsi"
+  },
+  {
+    "address": "401343",
+    "opcode": "4c 8b 44 24 50       ",
+    "mnemonic": "mov",
+    "operands": "0x50(%rsp),%r8"
+  },
+  {
+    "address": "401348",
+    "opcode": "e9 c3 fd ff ff       ",
+    "mnemonic": "jmpq",
+    "operands": "401110 <internal/cpu.processOptions+0x30>"
+  },
+  {
+    "address": "40134d",
+    "opcode": "48 8b 05 94 10 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x211094(%rip),%rax        # 6123e8 <internal/cpu.options+0x8>"
+  },
+  {
+    "address": "401354",
+    "opcode": "48 8b 0d 85 10 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x211085(%rip),%rcx        # 6123e0 <internal/cpu.options>"
+  },
+  {
+    "address": "40135b",
+    "opcode": "0f 1f 44 00 00       ",
+    "mnemonic": "nopl",
+    "operands": "0x0(%rax,%rax,1)"
+  },
+  {
+    "address": "401360",
+    "opcode": "48 85 c0             ",
+    "mnemonic": "test",
+    "operands": "%rax,%rax"
+  },
+  {
+    "address": "401363",
+    "opcode": "74 09                ",
+    "mnemonic": "je",
+    "operands": "40136e <internal/cpu.processOptions+0x28e>"
+  },
+  {
+    "address": "401365",
+    "opcode": "48 89 44 24 50       ",
+    "mnemonic": "mov",
+    "operands": "%rax,0x50(%rsp)"
+  },
+  {
+    "address": "40136a",
+    "opcode": "31 d2                ",
+    "mnemonic": "xor",
+    "operands": "%edx,%edx"
+  },
+  {
+    "address": "40136c",
+    "opcode": "eb 14                ",
+    "mnemonic": "jmp",
+    "operands": "401382 <internal/cpu.processOptions+0x2a2>"
+  },
+  {
+    "address": "40136e",
+    "opcode": "48 8b ac 24 80 00 00 ",
+    "mnemonic": "mov",
+    "operands": "0x80(%rsp),%rbp"
+  },
+  {
+    "address": "401376",
+    "opcode": "48 81 c4 88 00 00 00 ",
+    "mnemonic": "add",
+    "operands": "$0x88,%rsp"
+  },
+  {
+    "address": "40137e",
+    "opcode": "48 83 c1 20          ",
+    "mnemonic": "add",
+    "operands": "$0x20,%rcx"
+  },
+  {
+    "address": "401382",
+    "opcode": "0f b6 59 19          ",
+    "mnemonic": "movzbl",
+    "operands": "0x19(%rcx),%ebx"
+  },
+  {
+    "address": "401386",
+    "opcode": "48 8b 71 10          ",
+    "mnemonic": "mov",
+    "operands": "0x10(%rcx),%rsi"
+  },
+  {
+    "address": "40138a",
+    "opcode": "48 8b 39             ",
+    "mnemonic": "mov",
+    "operands": "(%rcx),%rdi"
+  },
+  {
+    "address": "40138d",
+    "opcode": "4c 8b 41 08          ",
+    "mnemonic": "mov",
+    "operands": "0x8(%rcx),%r8"
+  },
+  {
+    "address": "401391",
+    "opcode": "80 79 18 00          ",
+    "mnemonic": "cmpb",
+    "operands": "$0x0,0x18(%rcx)"
+  },
+  {
+    "address": "401395",
+    "opcode": "74 6d                ",
+    "mnemonic": "je",
+    "operands": "401404 <internal/cpu.processOptions+0x324>"
+  },
+  {
+    "address": "401397",
+    "opcode": "84 db                ",
+    "mnemonic": "test",
+    "operands": "%bl,%bl"
+  },
+  {
+    "address": "401399",
+    "opcode": "74 67                ",
+    "mnemonic": "je",
+    "operands": "401402 <internal/cpu.processOptions+0x322>"
+  },
+  {
+    "address": "40139b",
+    "opcode": "80 3e 00             ",
+    "mnemonic": "cmpb",
+    "operands": "$0x0,(%rsi)"
+  },
+  {
+    "address": "40139e",
+    "opcode": "66 90                ",
+    "mnemonic": "xchg",
+    "operands": "%ax,%ax"
+  },
+  {
+    "address": "4013a0",
+    "opcode": "75 60                ",
+    "mnemonic": "jne",
+    "operands": "401402 <internal/cpu.processOptions+0x322>"
+  },
+  {
+    "address": "4013a2",
+    "opcode": "4c 89 44 24 48       ",
+    "mnemonic": "mov",
+    "operands": "%r8,0x48(%rsp)"
+  },
+  {
+    "address": "4013a7",
+    "opcode": "48 89 7c 24 78       ",
+    "mnemonic": "mov",
+    "operands": "%rdi,0x78(%rsp)"
+  },
+  {
+    "address": "4013ac",
+    "opcode": "48 89 54 24 40       ",
+    "mnemonic": "mov",
+    "operands": "%rdx,0x40(%rsp)"
+  },
+  {
+    "address": "4013b1",
+    "opcode": "48 89 4c 24 70       ",
+    "mnemonic": "mov",
+    "operands": "%rcx,0x70(%rsp)"
+  },
+  {
+    "address": "4013b6",
+    "opcode": "e8 e5 70 03 00       ",
+    "mnemonic": "callq",
+    "operands": "4384a0 <runtime.printlock>"
+  },
+  {
+    "address": "4013bb",
+    "opcode": "48 8d 05 02 8a 12 00 ",
+    "mnemonic": "lea",
+    "operands": "0x128a02(%rip),%rax        # 529dc4 <go.string.*+0x62ec>"
+  },
+  {
+    "address": "4013c2",
+    "opcode": "bb 19 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x19,%ebx"
+  },
+  {
+    "address": "4013c7",
+    "opcode": "e8 d4 79 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "4013cc",
+    "opcode": "48 8b 44 24 78       ",
+    "mnemonic": "mov",
+    "operands": "0x78(%rsp),%rax"
+  },
+  {
+    "address": "4013d1",
+    "opcode": "48 8b 5c 24 48       ",
+    "mnemonic": "mov",
+    "operands": "0x48(%rsp),%rbx"
+  },
+  {
+    "address": "4013d6",
+    "opcode": "e8 c5 79 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "4013db",
+    "opcode": "48 8d 05 9a 7f 12 00 ",
+    "mnemonic": "lea",
+    "operands": "0x127f9a(%rip),%rax        # 52937c <go.string.*+0x58a4>"
+  },
+  {
+    "address": "4013e2",
+    "opcode": "bb 17 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x17,%ebx"
+  },
+  {
+    "address": "4013e7",
+    "opcode": "e8 b4 79 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "4013ec",
+    "opcode": "e8 2f 71 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438520 <runtime.printunlock>"
+  },
+  {
+    "address": "4013f1",
+    "opcode": "48 8b 44 24 50       ",
+    "mnemonic": "mov",
+    "operands": "0x50(%rsp),%rax"
+  },
+  {
+    "address": "4013f6",
+    "opcode": "48 8b 4c 24 70       ",
+    "mnemonic": "mov",
+    "operands": "0x70(%rsp),%rcx"
+  },
+  {
+    "address": "4013fb",
+    "opcode": "48 8b 54 24 40       ",
+    "mnemonic": "mov",
+    "operands": "0x40(%rsp),%rdx"
+  },
+  {
+    "address": "401400",
+    "opcode": "eb 02                ",
+    "mnemonic": "jmp",
+    "operands": "401404 <internal/cpu.processOptions+0x324>"
+  },
+  {
+    "address": "401402",
+    "opcode": "88 1e                ",
+    "mnemonic": "mov",
+    "operands": "%bl,(%rsi)"
+  },
+  {
+    "address": "401404",
+    "opcode": "48 ff c2             ",
+    "mnemonic": "inc",
+    "operands": "%rdx"
+  },
+  {
+    "address": "401407",
+    "opcode": "48 39 d0             ",
+    "mnemonic": "cmp",
+    "operands": "%rdx,%rax"
+  },
+  {
+    "address": "40140a",
+    "opcode": "0f 8f 6e ff ff ff    ",
+    "mnemonic": "jg",
+    "operands": "40137e <internal/cpu.processOptions+0x29e>"
+  },
+  {
+    "address": "401410",
+    "opcode": "e9 59 ff ff ff       ",
+    "mnemonic": "jmpq",
+    "operands": "40136e <internal/cpu.processOptions+0x28e>"
+  },
+  {
+    "address": "401415",
+    "opcode": "48 ff c1             ",
+    "mnemonic": "inc",
+    "operands": "%rcx"
+  },
+  {
+    "address": "401418",
+    "opcode": "0f 1f 84 00 00 00 00 ",
+    "mnemonic": "nopl",
+    "operands": "0x0(%rax,%rax,1)"
+  },
+  {
+    "address": "401420",
+    "opcode": "48 39 d9             ",
+    "mnemonic": "cmp",
+    "operands": "%rbx,%rcx"
+  },
+  {
+    "address": "401423",
+    "opcode": "0f 8d fd fc ff ff    ",
+    "mnemonic": "jge",
+    "operands": "401126 <internal/cpu.processOptions+0x46>"
+  },
+  {
+    "address": "401429",
+    "opcode": "0f b6 34 08          ",
+    "mnemonic": "movzbl",
+    "operands": "(%rax,%rcx,1),%esi"
+  },
+  {
+    "address": "40142d",
+    "opcode": "40 80 fe 2c          ",
+    "mnemonic": "cmp",
+    "operands": "$0x2c,%sil"
+  },
+  {
+    "address": "401431",
+    "opcode": "75 e2                ",
+    "mnemonic": "jne",
+    "operands": "401415 <internal/cpu.processOptions+0x335>"
+  },
+  {
+    "address": "401433",
+    "opcode": "e9 f5 fc ff ff       ",
+    "mnemonic": "jmpq",
+    "operands": "40112d <internal/cpu.processOptions+0x4d>"
+  },
+  {
+    "address": "401438",
+    "opcode": "48 ff c2             ",
+    "mnemonic": "inc",
+    "operands": "%rdx"
+  },
+  {
+    "address": "40143b",
+    "opcode": "0f 1f 44 00 00       ",
+    "mnemonic": "nopl",
+    "operands": "0x0(%rax,%rax,1)"
+  },
+  {
+    "address": "401440",
+    "opcode": "48 39 ca             ",
+    "mnemonic": "cmp",
+    "operands": "%rcx,%rdx"
+  },
+  {
+    "address": "401443",
+    "opcode": "0f 8d 3c fd ff ff    ",
+    "mnemonic": "jge",
+    "operands": "401185 <internal/cpu.processOptions+0xa5>"
+  },
+  {
+    "address": "401449",
+    "opcode": "0f b6 3c 10          ",
+    "mnemonic": "movzbl",
+    "operands": "(%rax,%rdx,1),%edi"
+  },
+  {
+    "address": "40144d",
+    "opcode": "40 80 ff 3d          ",
+    "mnemonic": "cmp",
+    "operands": "$0x3d,%dil"
+  },
+  {
+    "address": "401451",
+    "opcode": "75 e5                ",
+    "mnemonic": "jne",
+    "operands": "401438 <internal/cpu.processOptions+0x358>"
+  },
+  {
+    "address": "401453",
+    "opcode": "e9 34 fd ff ff       ",
+    "mnemonic": "jmpq",
+    "operands": "40118c <internal/cpu.processOptions+0xac>"
+  },
+  {
+    "address": "401458",
+    "opcode": "49 8d 43 01          ",
+    "mnemonic": "lea",
+    "operands": "0x1(%r11),%rax"
+  },
+  {
+    "address": "40145c",
+    "opcode": "0f 1f 40 00          ",
+    "mnemonic": "nopl",
+    "operands": "0x0(%rax)"
+  },
+  {
+    "address": "401460",
+    "opcode": "48 39 d0             ",
+    "mnemonic": "cmp",
+    "operands": "%rdx,%rax"
+  },
+  {
+    "address": "401463",
+    "opcode": "0f 8d c7 00 00 00    ",
+    "mnemonic": "jge",
+    "operands": "401530 <internal/cpu.processOptions+0x450>"
+  },
+  {
+    "address": "401469",
+    "opcode": "48 8b 3d 70 0f 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210f70(%rip),%rdi        # 6123e0 <internal/cpu.options>"
+  },
+  {
+    "address": "401470",
+    "opcode": "48 8b 0d 71 0f 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210f71(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>"
+  },
+  {
+    "address": "401477",
+    "opcode": "66 0f 1f 84 00 00 00 ",
+    "mnemonic": "nopw",
+    "operands": "0x0(%rax,%rax,1)"
+  },
+  {
+    "address": "401480",
+    "opcode": "48 39 c8             ",
+    "mnemonic": "cmp",
+    "operands": "%rcx,%rax"
+  },
+  {
+    "address": "401483",
+    "opcode": "0f 83 fc 00 00 00    ",
+    "mnemonic": "jae",
+    "operands": "401585 <internal/cpu.processOptions+0x4a5>"
+  },
+  {
+    "address": "401489",
+    "opcode": "49 89 c3             ",
+    "mnemonic": "mov",
+    "operands": "%rax,%r11"
+  },
+  {
+    "address": "40148c",
+    "opcode": "48 c1 e0 05          ",
+    "mnemonic": "shl",
+    "operands": "$0x5,%rax"
+  },
+  {
+    "address": "401490",
+    "opcode": "48 8b 4c 07 08       ",
+    "mnemonic": "mov",
+    "operands": "0x8(%rdi,%rax,1),%rcx"
+  },
+  {
+    "address": "401495",
+    "opcode": "48 8b 3c 07          ",
+    "mnemonic": "mov",
+    "operands": "(%rdi,%rax,1),%rdi"
+  },
+  {
+    "address": "401499",
+    "opcode": "4c 39 c9             ",
+    "mnemonic": "cmp",
+    "operands": "%r9,%rcx"
+  },
+  {
+    "address": "40149c",
+    "opcode": "75 ba                ",
+    "mnemonic": "jne",
+    "operands": "401458 <internal/cpu.processOptions+0x378>"
+  },
+  {
+    "address": "40149e",
+    "opcode": "48 89 44 24 38       ",
+    "mnemonic": "mov",
+    "operands": "%rax,0x38(%rsp)"
+  },
+  {
+    "address": "4014a3",
+    "opcode": "4c 89 5c 24 30       ",
+    "mnemonic": "mov",
+    "operands": "%r11,0x30(%rsp)"
+  },
+  {
+    "address": "4014a8",
+    "opcode": "48 89 f8             ",
+    "mnemonic": "mov",
+    "operands": "%rdi,%rax"
+  },
+  {
+    "address": "4014ab",
+    "opcode": "e8 50 15 00 00       ",
+    "mnemonic": "callq",
+    "operands": "402a00 <runtime.memequal>"
+  },
+  {
+    "address": "4014b0",
+    "opcode": "84 c0                ",
+    "mnemonic": "test",
+    "operands": "%al,%al"
+  },
+  {
+    "address": "4014b2",
+    "opcode": "75 29                ",
+    "mnemonic": "jne",
+    "operands": "4014dd <internal/cpu.processOptions+0x3fd>"
+  },
+  {
+    "address": "4014b4",
+    "opcode": "48 8b 54 24 40       ",
+    "mnemonic": "mov",
+    "operands": "0x40(%rsp),%rdx"
+  },
+  {
+    "address": "4014b9",
+    "opcode": "48 8b 5c 24 60       ",
+    "mnemonic": "mov",
+    "operands": "0x60(%rsp),%rbx"
+  },
+  {
+    "address": "4014be",
+    "opcode": "48 8b 74 24 78       ",
+    "mnemonic": "mov",
+    "operands": "0x78(%rsp),%rsi"
+  },
+  {
+    "address": "4014c3",
+    "opcode": "4c 8b 44 24 50       ",
+    "mnemonic": "mov",
+    "operands": "0x50(%rsp),%r8"
+  },
+  {
+    "address": "4014c8",
+    "opcode": "4c 8b 4c 24 48       ",
+    "mnemonic": "mov",
+    "operands": "0x48(%rsp),%r9"
+  },
+  {
+    "address": "4014cd",
+    "opcode": "44 0f b6 54 24 1f    ",
+    "mnemonic": "movzbl",
+    "operands": "0x1f(%rsp),%r10d"
+  },
+  {
+    "address": "4014d3",
+    "opcode": "4c 8b 5c 24 30       ",
+    "mnemonic": "mov",
+    "operands": "0x30(%rsp),%r11"
+  },
+  {
+    "address": "4014d8",
+    "opcode": "e9 7b ff ff ff       ",
+    "mnemonic": "jmpq",
+    "operands": "401458 <internal/cpu.processOptions+0x378>"
+  },
+  {
+    "address": "4014dd",
+    "opcode": "48 8b 0d 04 0f 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210f04(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>"
+  },
+  {
+    "address": "4014e4",
+    "opcode": "48 8b 35 f5 0e 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210ef5(%rip),%rsi        # 6123e0 <internal/cpu.options>"
+  },
+  {
+    "address": "4014eb",
+    "opcode": "48 8b 44 24 30       ",
+    "mnemonic": "mov",
+    "operands": "0x30(%rsp),%rax"
+  },
+  {
+    "address": "4014f0",
+    "opcode": "48 39 c8             ",
+    "mnemonic": "cmp",
+    "operands": "%rcx,%rax"
+  },
+  {
+    "address": "4014f3",
+    "opcode": "0f 83 87 00 00 00    ",
+    "mnemonic": "jae",
+    "operands": "401580 <internal/cpu.processOptions+0x4a0>"
+  },
+  {
+    "address": "4014f9",
+    "opcode": "48 8b 7c 24 38       ",
+    "mnemonic": "mov",
+    "operands": "0x38(%rsp),%rdi"
+  },
+  {
+    "address": "4014fe",
+    "opcode": "c6 44 3e 18 01       ",
+    "mnemonic": "movb",
+    "operands": "$0x1,0x18(%rsi,%rdi,1)"
+  },
+  {
+    "address": "401503",
+    "opcode": "48 8b 0d de 0e 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210ede(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>"
+  },
+  {
+    "address": "40150a",
+    "opcode": "48 8b 35 cf 0e 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210ecf(%rip),%rsi        # 6123e0 <internal/cpu.options>"
+  },
+  {
+    "address": "401511",
+    "opcode": "48 39 c8             ",
+    "mnemonic": "cmp",
+    "operands": "%rcx,%rax"
+  },
+  {
+    "address": "401514",
+    "opcode": "73 64                ",
+    "mnemonic": "jae",
+    "operands": "40157a <internal/cpu.processOptions+0x49a>"
+  },
+  {
+    "address": "401516",
+    "opcode": "44 0f b6 4c 24 1f    ",
+    "mnemonic": "movzbl",
+    "operands": "0x1f(%rsp),%r9d"
+  },
+  {
+    "address": "40151c",
+    "opcode": "44 88 4c 3e 19       ",
+    "mnemonic": "mov",
+    "operands": "%r9b,0x19(%rsi,%rdi,1)"
+  },
+  {
+    "address": "401521",
+    "opcode": "48 8b 74 24 78       ",
+    "mnemonic": "mov",
+    "operands": "0x78(%rsp),%rsi"
+  },
+  {
+    "address": "401526",
+    "opcode": "4c 8b 44 24 50       ",
+    "mnemonic": "mov",
+    "operands": "0x50(%rsp),%r8"
+  },
+  {
+    "address": "40152b",
+    "opcode": "e9 e0 fb ff ff       ",
+    "mnemonic": "jmpq",
+    "operands": "401110 <internal/cpu.processOptions+0x30>"
+  },
+  {
+    "address": "401530",
+    "opcode": "e8 6b 6f 03 00       ",
+    "mnemonic": "callq",
+    "operands": "4384a0 <runtime.printlock>"
+  },
+  {
+    "address": "401535",
+    "opcode": "48 8d 05 8a a4 12 00 ",
+    "mnemonic": "lea",
+    "operands": "0x12a48a(%rip),%rax        # 52b9c6 <go.string.*+0x7eee>"
+  },
+  {
+    "address": "40153c",
+    "opcode": "bb 1e 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x1e,%ebx"
+  },
+  {
+    "address": "401541",
+    "opcode": "e8 5a 78 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "401546",
+    "opcode": "48 8b 44 24 60       ",
+    "mnemonic": "mov",
+    "operands": "0x60(%rsp),%rax"
+  },
+  {
+    "address": "40154b",
+    "opcode": "48 8b 5c 24 48       ",
+    "mnemonic": "mov",
+    "operands": "0x48(%rsp),%rbx"
+  },
+  {
+    "address": "401550",
+    "opcode": "e8 4b 78 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "401555",
+    "opcode": "48 8d 05 00 26 12 00 ",
+    "mnemonic": "lea",
+    "operands": "0x122600(%rip),%rax        # 523b5c <go.string.*+0x84>"
+  },
+  {
+    "address": "40155c",
+    "opcode": "bb 02 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x2,%ebx"
+  },
+  {
+    "address": "401561",
+    "opcode": "e8 3a 78 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438da0 <runtime.printstring>"
+  },
+  {
+    "address": "401566",
+    "opcode": "e8 b5 6f 03 00       ",
+    "mnemonic": "callq",
+    "operands": "438520 <runtime.printunlock>"
+  },
+  {
+    "address": "40156b",
+    "opcode": "48 8b 74 24 78       ",
+    "mnemonic": "mov",
+    "operands": "0x78(%rsp),%rsi"
+  },
+  {
+    "address": "401570",
+    "opcode": "4c 8b 44 24 50       ",
+    "mnemonic": "mov",
+    "operands": "0x50(%rsp),%r8"
+  },
+  {
+    "address": "401575",
+    "opcode": "e9 96 fb ff ff       ",
+    "mnemonic": "jmpq",
+    "operands": "401110 <internal/cpu.processOptions+0x30>"
+  },
+  {
+    "address": "40157a",
+    "opcode": "e8 e1 1f 06 00       ",
+    "mnemonic": "callq",
+    "operands": "463560 <runtime.panicIndex>"
+  },
+  {
+    "address": "401580",
+    "opcode": "e8 db 1f 06 00       ",
+    "mnemonic": "callq",
+    "operands": "463560 <runtime.panicIndex>"
+  },
+  {
+    "address": "401585",
+    "opcode": "e8 d6 1f 06 00       ",
+    "mnemonic": "callq",
+    "operands": "463560 <runtime.panicIndex>"
+  },
+  {
+    "address": "40158a",
+    "opcode": "45 88 54 01 19       ",
+    "mnemonic": "mov",
+    "operands": "%r10b,0x19(%r9,%rax,1)"
+  },
+  {
+    "address": "40158f",
+    "opcode": "49 8d 43 01          ",
+    "mnemonic": "lea",
+    "operands": "0x1(%r11),%rax"
+  },
+  {
+    "address": "401593",
+    "opcode": "48 39 f8             ",
+    "mnemonic": "cmp",
+    "operands": "%rdi,%rax"
+  },
+  {
+    "address": "401596",
+    "opcode": "0f 8d 74 fb ff ff    ",
+    "mnemonic": "jge",
+    "operands": "401110 <internal/cpu.processOptions+0x30>"
+  },
+  {
+    "address": "40159c",
+    "opcode": "48 8b 0d 45 0e 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210e45(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>"
+  },
+  {
+    "address": "4015a3",
+    "opcode": "4c 8b 0d 36 0e 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210e36(%rip),%r9        # 6123e0 <internal/cpu.options>"
+  },
+  {
+    "address": "4015aa",
+    "opcode": "48 39 c8             ",
+    "mnemonic": "cmp",
+    "operands": "%rcx,%rax"
+  },
+  {
+    "address": "4015ad",
+    "opcode": "73 28                ",
+    "mnemonic": "jae",
+    "operands": "4015d7 <internal/cpu.processOptions+0x4f7>"
+  },
+  {
+    "address": "4015af",
+    "opcode": "49 89 c3             ",
+    "mnemonic": "mov",
+    "operands": "%rax,%r11"
+  },
+  {
+    "address": "4015b2",
+    "opcode": "48 c1 e0 05          ",
+    "mnemonic": "shl",
+    "operands": "$0x5,%rax"
+  },
+  {
+    "address": "4015b6",
+    "opcode": "41 c6 44 01 18 01    ",
+    "mnemonic": "movb",
+    "operands": "$0x1,0x18(%r9,%rax,1)"
+  },
+  {
+    "address": "4015bc",
+    "opcode": "48 8b 0d 25 0e 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210e25(%rip),%rcx        # 6123e8 <internal/cpu.options+0x8>"
+  },
+  {
+    "address": "4015c3",
+    "opcode": "4c 8b 0d 16 0e 21 00 ",
+    "mnemonic": "mov",
+    "operands": "0x210e16(%rip),%r9        # 6123e0 <internal/cpu.options>"
+  },
+  {
+    "address": "4015ca",
+    "opcode": "49 39 cb             ",
+    "mnemonic": "cmp",
+    "operands": "%rcx,%r11"
+  },
+  {
+    "address": "4015cd",
+    "opcode": "72 bb                ",
+    "mnemonic": "jb",
+    "operands": "40158a <internal/cpu.processOptions+0x4aa>"
+  },
+  {
+    "address": "4015cf",
+    "opcode": "4c 89 d8             ",
+    "mnemonic": "mov",
+    "operands": "%r11,%rax"
+  },
+  {
+    "address": "4015d2",
+    "opcode": "e8 89 1f 06 00       ",
+    "mnemonic": "callq",
+    "operands": "463560 <runtime.panicIndex>"
+  },
+  {
+    "address": "4015d7",
+    "opcode": "e8 84 1f 06 00       ",
+    "mnemonic": "callq",
+    "operands": "463560 <runtime.panicIndex>"
+  },
+  {
+    "address": "4015dc",
+    "opcode": "4c 89 d0             ",
+    "mnemonic": "mov",
+    "operands": "%r10,%rax"
+  },
+  {
+    "address": "4015e0",
+    "opcode": "e8 3b 20 06 00       ",
+    "mnemonic": "callq",
+    "operands": "463620 <runtime.panicSliceB>"
+  },
+  {
+    "address": "4015e5",
+    "opcode": "b8 04 00 00 00       ",
+    "mnemonic": "mov",
+    "operands": "$0x4,%eax"
+  },
+  {
+    "address": "4015ea",
+    "opcode": "48 89 d1             ",
+    "mnemonic": "mov",
+    "operands": "%rdx,%rcx"
+  },
+  {
+    "address": "4015ed",
+    "opcode": "e8 2e 20 06 00       ",
+    "mnemonic": "callq",
+    "operands": "463620 <runtime.panicSliceB>"
+  },
+  {
+    "address": "4015f2",
+    "opcode": "48 89 c8             ",
+    "mnemonic": "mov",
+    "operands": "%rcx,%rax"
+  },
+  {
+    "address": "4015f5",
+    "opcode": "48 89 d1             ",
+    "mnemonic": "mov",
+    "operands": "%rdx,%rcx"
+  },
+  {
+    "address": "4015f8",
+    "opcode": "48 89 c2             ",
+    "mnemonic": "mov",
+    "operands": "%rax,%rdx"
+  },
+  {
+    "address": "4015fb",
+    "opcode": "0f 1f 44 00 00       ",
+    "mnemonic": "nopl",
+    "operands": "0x0(%rax,%rax,1)"
+  },
+  {
+    "address": "401600",
+    "opcode": "e8 9b 1f 06 00       ",
+    "mnemonic": "callq",
+    "operands": "4635a0 <runtime.panicSliceAlen>"
+  },
+  {
+    "address": "401605",
+    "opcode": "48 89 f0             ",
+    "mnemonic": "mov",
+    "operands": "%rsi,%rax"
+  },
+  {
+    "address": "401608",
+    "opcode": "48 89 d9             ",
+    "mnemonic": "mov",
+    "operands": "%rbx,%rcx"
+  },
+  {
+    "address": "40160b",
+    "opcode": "e8 10 20 06 00       ",
+    "mnemonic": "callq",
+    "operands": "463620 <runtime.panicSliceB>"
+  },
+  {
+    "address": "401610",
+    "opcode": "48 89 da             ",
+    "mnemonic": "mov",
+    "operands": "%rbx,%rdx"
+  },
+  {
+    "address": "401613",
+    "opcode": "e8 88 1f 06 00       ",
+    "mnemonic": "callq",
+    "operands": "4635a0 <runtime.panicSliceAlen>"
+  },
+  {
+    "address": "401619",
+    "opcode": "48 89 44 24 08       ",
+    "mnemonic": "mov",
+    "operands": "%rax,0x8(%rsp)"
+  },
+  {
+    "address": "40161e",
+    "opcode": "48 89 5c 24 10       ",
+    "mnemonic": "mov",
+    "operands": "%rbx,0x10(%rsp)"
+  },
+  {
+    "address": "401623",
+    "opcode": "e8 58 f8 05 00       ",
+    "mnemonic": "callq",
+    "operands": "460e80 <runtime.morestack_noctxt.abi0>"
+  },
+  {
+    "address": "401628",
+    "opcode": "48 8b 44 24 08       ",
+    "mnemonic": "mov",
+    "operands": "0x8(%rsp),%rax"
+  },
+  {
+    "address": "40162d",
+    "opcode": "48 8b 5c 24 10       ",
+    "mnemonic": "mov",
+    "operands": "0x10(%rsp),%rbx"
+  },
+  {
+    "address": "401632",
+    "opcode": "e9 a9 fa ff ff       ",
+    "mnemonic": "jmpq",
+    "operands": "4010e0 <internal/cpu.processOptions>"
+  }
+]

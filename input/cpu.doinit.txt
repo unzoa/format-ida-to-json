@@ -1,0 +1,479 @@
+ 401640:	49 3b 66 10          	cmp    0x10(%r14),%rsp
+  401644:	0f 86 5c 08 00 00    	jbe    401ea6 <internal/cpu.doinit+0x866>
+  40164a:	48 83 ec 60          	sub    $0x60,%rsp
+  40164e:	48 89 6c 24 58       	mov    %rbp,0x58(%rsp)
+  401653:	48 8d 6c 24 58       	lea    0x58(%rsp),%rbp
+  401658:	48 8d 05 21 36 10 00 	lea    0x103621(%rip),%rax        # 504c80 <type.*+0xdc80>
+  40165f:	90                   	nop
+  401660:	e8 fb b8 00 00       	callq  40cf60 <runtime.newobject>
+  401665:	48 c7 40 08 03 00 00 	movq   $0x3,0x8(%rax)
+  40166c:	00
+  40166d:	48 8d 0d 13 26 12 00 	lea    0x122613(%rip),%rcx        # 523c87 <go.string.*+0x1af>
+  401674:	48 89 08             	mov    %rcx,(%rax)
+  401677:	48 8d 0d 03 59 26 00 	lea    0x265903(%rip),%rcx        # 666f81 <internal/cpu.X86+0x41>
+  40167e:	48 89 48 10          	mov    %rcx,0x10(%rax)
+  401682:	48 c7 40 28 03 00 00 	movq   $0x3,0x28(%rax)
+  401689:	00
+  40168a:	48 8d 0d f9 25 12 00 	lea    0x1225f9(%rip),%rcx        # 523c8a <go.string.*+0x1b2>
+  401691:	48 89 48 20          	mov    %rcx,0x20(%rax)
+  401695:	48 8d 0d e4 58 26 00 	lea    0x2658e4(%rip),%rcx        # 666f80 <internal/cpu.X86+0x40>
+  40169c:	48 89 48 30          	mov    %rcx,0x30(%rax)
+  4016a0:	48 c7 40 48 04 00 00 	movq   $0x4,0x48(%rax)
+  4016a7:	00
+  4016a8:	48 8d 0d 9b 27 12 00 	lea    0x12279b(%rip),%rcx        # 523e4a <go.string.*+0x372>
+  4016af:	48 89 48 40          	mov    %rcx,0x40(%rax)
+  4016b3:	48 8d 0d cc 58 26 00 	lea    0x2658cc(%rip),%rcx        # 666f86 <internal/cpu.X86+0x46>
+  4016ba:	48 89 48 50          	mov    %rcx,0x50(%rax)
+  4016be:	48 c7 40 68 09 00 00 	movq   $0x9,0x68(%rax)
+  4016c5:	00
+  4016c6:	48 8d 0d 0f 35 12 00 	lea    0x12350f(%rip),%rcx        # 524bdc <go.string.*+0x1104>
+  4016cd:	48 89 48 60          	mov    %rcx,0x60(%rax)
+  4016d1:	48 8d 0d b1 58 26 00 	lea    0x2658b1(%rip),%rcx        # 666f89 <internal/cpu.X86+0x49>
+  4016d8:	48 89 48 70          	mov    %rcx,0x70(%rax)
+  4016dc:	48 c7 80 88 00 00 00 	movq   $0x6,0x88(%rax)
+  4016e3:	06 00 00 00
+  4016e7:	48 8d 0d a1 2b 12 00 	lea    0x122ba1(%rip),%rcx        # 52428f <go.string.*+0x7b7>
+  4016ee:	48 89 88 80 00 00 00 	mov    %rcx,0x80(%rax)
+  4016f5:	48 8d 0d 8f 58 26 00 	lea    0x26588f(%rip),%rcx        # 666f8b <internal/cpu.X86+0x4b>
+  4016fc:	48 89 88 90 00 00 00 	mov    %rcx,0x90(%rax)
+  401703:	48 c7 05 da 0c 21 00 	movq   $0x5,0x210cda(%rip)        # 6123e8 <internal/cpu.options+0x8>
+  40170a:	05 00 00 00
+  40170e:	48 c7 05 d7 0c 21 00 	movq   $0x5,0x210cd7(%rip)        # 6123f0 <internal/cpu.options+0x10>
+  401715:	05 00 00 00
+  401719:	83 3d d0 52 26 00 00 	cmpl   $0x0,0x2652d0(%rip)        # 6669f0 <runtime.writeBarrier>
+  401720:	75 09                	jne    40172b <internal/cpu.doinit+0xeb>
+  401722:	48 89 05 b7 0c 21 00 	mov    %rax,0x210cb7(%rip)        # 6123e0 <internal/cpu.options>
+  401729:	eb 0c                	jmp    401737 <internal/cpu.doinit+0xf7>
+  40172b:	48 8d 3d ae 0c 21 00 	lea    0x210cae(%rip),%rdi        # 6123e0 <internal/cpu.options>
+  401732:	e8 89 19 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401737:	e8 c4 07 00 00       	callq  401f00 <internal/cpu.getGOAMD64level.abi0>
+  40173c:	45 0f 57 ff          	xorps  %xmm15,%xmm15
+  401740:	65 4c 8b 34 25 28 00 	mov    %gs:0x28,%r14
+  401747:	00 00
+  401749:	4d 8b b6 00 00 00 00 	mov    0x0(%r14),%r14
+  401750:	8b 04 24             	mov    (%rsp),%eax
+  401753:	83 f8 02             	cmp    $0x2,%eax
+  401756:	0f 8d 89 02 00 00    	jge    4019e5 <internal/cpu.doinit+0x3a5>
+  40175c:	48 8b 35 85 0c 21 00 	mov    0x210c85(%rip),%rsi        # 6123e8 <internal/cpu.options+0x8>
+  401763:	48 8d 56 05          	lea    0x5(%rsi),%rdx
+  401767:	48 8b 1d 72 0c 21 00 	mov    0x210c72(%rip),%rbx        # 6123e0 <internal/cpu.options>
+  40176e:	48 8b 3d 7b 0c 21 00 	mov    0x210c7b(%rip),%rdi        # 6123f0 <internal/cpu.options+0x10>
+  401775:	48 39 d7             	cmp    %rdx,%rdi
+  401778:	73 47                	jae    4017c1 <internal/cpu.doinit+0x181>
+  40177a:	89 44 24 48          	mov    %eax,0x48(%rsp)
+  40177e:	48 8d 05 bb 51 11 00 	lea    0x1151bb(%rip),%rax        # 516940 <type.*+0x1f940>
+  401785:	48 89 f1             	mov    %rsi,%rcx
+  401788:	48 89 d6             	mov    %rdx,%rsi
+  40178b:	e8 d0 8e 04 00       	callq  44a660 <runtime.growslice>
+  401790:	48 89 0d 59 0c 21 00 	mov    %rcx,0x210c59(%rip)        # 6123f0 <internal/cpu.options+0x10>
+  401797:	83 3d 52 52 26 00 00 	cmpl   $0x0,0x265252(%rip)        # 6669f0 <runtime.writeBarrier>
+  40179e:	66 90                	xchg   %ax,%ax
+  4017a0:	75 09                	jne    4017ab <internal/cpu.doinit+0x16b>
+  4017a2:	48 89 05 37 0c 21 00 	mov    %rax,0x210c37(%rip)        # 6123e0 <internal/cpu.options>
+  4017a9:	eb 0c                	jmp    4017b7 <internal/cpu.doinit+0x177>
+  4017ab:	48 8d 3d 2e 0c 21 00 	lea    0x210c2e(%rip),%rdi        # 6123e0 <internal/cpu.options>
+  4017b2:	e8 09 19 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  4017b7:	48 89 de             	mov    %rbx,%rsi
+  4017ba:	48 89 c3             	mov    %rax,%rbx
+  4017bd:	8b 44 24 48          	mov    0x48(%rsp),%eax
+  4017c1:	48 8d 56 05          	lea    0x5(%rsi),%rdx
+  4017c5:	48 89 15 1c 0c 21 00 	mov    %rdx,0x210c1c(%rip)        # 6123e8 <internal/cpu.options+0x8>
+  4017cc:	48 c1 e6 05          	shl    $0x5,%rsi
+  4017d0:	48 c7 44 33 08 06 00 	movq   $0x6,0x8(%rbx,%rsi,1)
+  4017d7:	00 00
+  4017d9:	c6 44 33 18 00       	movb   $0x0,0x18(%rbx,%rsi,1)
+  4017de:	c6 44 33 19 00       	movb   $0x0,0x19(%rbx,%rsi,1)
+  4017e3:	48 8d 3c 33          	lea    (%rbx,%rsi,1),%rdi
+  4017e7:	48 8d 14 33          	lea    (%rbx,%rsi,1),%rdx
+  4017eb:	48 8d 52 10          	lea    0x10(%rdx),%rdx
+  4017ef:	4c 8d 04 33          	lea    (%rbx,%rsi,1),%r8
+  4017f3:	4d 8d 40 20          	lea    0x20(%r8),%r8
+  4017f7:	4c 8d 0c 33          	lea    (%rbx,%rsi,1),%r9
+  4017fb:	4d 8d 49 30          	lea    0x30(%r9),%r9
+  4017ff:	4c 8d 14 33          	lea    (%rbx,%rsi,1),%r10
+  401803:	4d 8d 52 40          	lea    0x40(%r10),%r10
+  401807:	4c 8d 1c 33          	lea    (%rbx,%rsi,1),%r11
+  40180b:	4d 8d 5b 50          	lea    0x50(%r11),%r11
+  40180f:	4c 8d 24 33          	lea    (%rbx,%rsi,1),%r12
+  401813:	4d 8d 64 24 60       	lea    0x60(%r12),%r12
+  401818:	4c 8d 2c 33          	lea    (%rbx,%rsi,1),%r13
+  40181c:	4d 8d 6d 70          	lea    0x70(%r13),%r13
+  401820:	4c 8d 3c 33          	lea    (%rbx,%rsi,1),%r15
+  401824:	4d 8d bf 80 00 00 00 	lea    0x80(%r15),%r15
+  40182b:	4c 89 f9             	mov    %r15,%rcx
+  40182e:	4c 8d 3c 33          	lea    (%rbx,%rsi,1),%r15
+  401832:	4d 8d bf 90 00 00 00 	lea    0x90(%r15),%r15
+  401839:	83 3d b0 51 26 00 00 	cmpl   $0x0,0x2651b0(%rip)        # 6669f0 <runtime.writeBarrier>
+  401840:	75 19                	jne    40185b <internal/cpu.doinit+0x21b>
+  401842:	48 8d 15 40 2a 12 00 	lea    0x122a40(%rip),%rdx        # 524289 <go.string.*+0x7b1>
+  401849:	48 89 14 33          	mov    %rdx,(%rbx,%rsi,1)
+  40184d:	48 8d 15 36 57 26 00 	lea    0x265736(%rip),%rdx        # 666f8a <internal/cpu.X86+0x4a>
+  401854:	48 89 54 33 10       	mov    %rdx,0x10(%rbx,%rsi,1)
+  401859:	eb 25                	jmp    401880 <internal/cpu.doinit+0x240>
+  40185b:	4c 89 4c 24 50       	mov    %r9,0x50(%rsp)
+  401860:	4c 8d 0d 22 2a 12 00 	lea    0x122a22(%rip),%r9        # 524289 <go.string.*+0x7b1>
+  401867:	e8 f4 19 06 00       	callq  463260 <runtime.gcWriteBarrierR9>
+  40186c:	48 89 d7             	mov    %rdx,%rdi
+  40186f:	48 8d 15 14 57 26 00 	lea    0x265714(%rip),%rdx        # 666f8a <internal/cpu.X86+0x4a>
+  401876:	e8 65 19 06 00       	callq  4631e0 <runtime.gcWriteBarrierDX>
+  40187b:	4c 8b 4c 24 50       	mov    0x50(%rsp),%r9
+  401880:	48 c7 44 33 28 04 00 	movq   $0x4,0x28(%rbx,%rsi,1)
+  401887:	00 00
+  401889:	c6 44 33 38 00       	movb   $0x0,0x38(%rbx,%rsi,1)
+  40188e:	c6 44 33 39 00       	movb   $0x0,0x39(%rbx,%rsi,1)
+  401893:	83 3d 56 51 26 00 00 	cmpl   $0x0,0x265156(%rip)        # 6669f0 <runtime.writeBarrier>
+  40189a:	75 1a                	jne    4018b6 <internal/cpu.doinit+0x276>
+  40189c:	48 8d 15 f7 25 12 00 	lea    0x1225f7(%rip),%rdx        # 523e9a <go.string.*+0x3c2>
+  4018a3:	48 89 54 33 20       	mov    %rdx,0x20(%rbx,%rsi,1)
+  4018a8:	48 8d 15 dd 56 26 00 	lea    0x2656dd(%rip),%rdx        # 666f8c <internal/cpu.X86+0x4c>
+  4018af:	48 89 54 33 30       	mov    %rdx,0x30(%rbx,%rsi,1)
+  4018b4:	eb 1e                	jmp    4018d4 <internal/cpu.doinit+0x294>
+  4018b6:	4c 89 c7             	mov    %r8,%rdi
+  4018b9:	48 8d 15 da 25 12 00 	lea    0x1225da(%rip),%rdx        # 523e9a <go.string.*+0x3c2>
+  4018c0:	e8 1b 19 06 00       	callq  4631e0 <runtime.gcWriteBarrierDX>
+  4018c5:	4c 89 cf             	mov    %r9,%rdi
+  4018c8:	48 8d 15 bd 56 26 00 	lea    0x2656bd(%rip),%rdx        # 666f8c <internal/cpu.X86+0x4c>
+  4018cf:	e8 0c 19 06 00       	callq  4631e0 <runtime.gcWriteBarrierDX>
+  4018d4:	48 c7 44 33 48 05 00 	movq   $0x5,0x48(%rbx,%rsi,1)
+  4018db:	00 00
+  4018dd:	c6 44 33 58 00       	movb   $0x0,0x58(%rbx,%rsi,1)
+  4018e2:	c6 44 33 59 00       	movb   $0x0,0x59(%rbx,%rsi,1)
+  4018e7:	83 3d 02 51 26 00 00 	cmpl   $0x0,0x265102(%rip)        # 6669f0 <runtime.writeBarrier>
+  4018ee:	75 1a                	jne    40190a <internal/cpu.doinit+0x2ca>
+  4018f0:	48 8d 15 4f 27 12 00 	lea    0x12274f(%rip),%rdx        # 524046 <go.string.*+0x56e>
+  4018f7:	48 89 54 33 40       	mov    %rdx,0x40(%rbx,%rsi,1)
+  4018fc:	48 8d 15 8b 56 26 00 	lea    0x26568b(%rip),%rdx        # 666f8e <internal/cpu.X86+0x4e>
+  401903:	48 89 54 33 50       	mov    %rdx,0x50(%rbx,%rsi,1)
+  401908:	eb 1e                	jmp    401928 <internal/cpu.doinit+0x2e8>
+  40190a:	4c 89 d7             	mov    %r10,%rdi
+  40190d:	48 8d 15 32 27 12 00 	lea    0x122732(%rip),%rdx        # 524046 <go.string.*+0x56e>
+  401914:	e8 c7 18 06 00       	callq  4631e0 <runtime.gcWriteBarrierDX>
+  401919:	4c 89 df             	mov    %r11,%rdi
+  40191c:	48 8d 15 6b 56 26 00 	lea    0x26566b(%rip),%rdx        # 666f8e <internal/cpu.X86+0x4e>
+  401923:	e8 b8 18 06 00       	callq  4631e0 <runtime.gcWriteBarrierDX>
+  401928:	48 c7 44 33 68 05 00 	movq   $0x5,0x68(%rbx,%rsi,1)
+  40192f:	00 00
+  401931:	c6 44 33 78 00       	movb   $0x0,0x78(%rbx,%rsi,1)
+  401936:	c6 44 33 79 00       	movb   $0x0,0x79(%rbx,%rsi,1)
+  40193b:	83 3d ae 50 26 00 00 	cmpl   $0x0,0x2650ae(%rip)        # 6669f0 <runtime.writeBarrier>
+  401942:	75 1a                	jne    40195e <internal/cpu.doinit+0x31e>
+  401944:	48 8d 15 00 27 12 00 	lea    0x122700(%rip),%rdx        # 52404b <go.string.*+0x573>
+  40194b:	48 89 54 33 60       	mov    %rdx,0x60(%rbx,%rsi,1)
+  401950:	48 8d 15 38 56 26 00 	lea    0x265638(%rip),%rdx        # 666f8f <internal/cpu.X86+0x4f>
+  401957:	48 89 54 33 70       	mov    %rdx,0x70(%rbx,%rsi,1)
+  40195c:	eb 1e                	jmp    40197c <internal/cpu.doinit+0x33c>
+  40195e:	4c 89 e7             	mov    %r12,%rdi
+  401961:	48 8d 15 e3 26 12 00 	lea    0x1226e3(%rip),%rdx        # 52404b <go.string.*+0x573>
+  401968:	e8 73 18 06 00       	callq  4631e0 <runtime.gcWriteBarrierDX>
+  40196d:	4c 89 ef             	mov    %r13,%rdi
+  401970:	48 8d 15 18 56 26 00 	lea    0x265618(%rip),%rdx        # 666f8f <internal/cpu.X86+0x4f>
+  401977:	e8 64 18 06 00       	callq  4631e0 <runtime.gcWriteBarrierDX>
+  40197c:	48 c7 84 33 88 00 00 	movq   $0x5,0x88(%rbx,%rsi,1)
+  401983:	00 05 00 00 00
+  401988:	c6 84 33 98 00 00 00 	movb   $0x0,0x98(%rbx,%rsi,1)
+  40198f:	00
+  401990:	c6 84 33 99 00 00 00 	movb   $0x0,0x99(%rbx,%rsi,1)
+  401997:	00
+  401998:	83 3d 51 50 26 00 00 	cmpl   $0x0,0x265051(%rip)        # 6669f0 <runtime.writeBarrier>
+  40199f:	90                   	nop
+  4019a0:	75 20                	jne    4019c2 <internal/cpu.doinit+0x382>
+  4019a2:	48 8d 15 a7 26 12 00 	lea    0x1226a7(%rip),%rdx        # 524050 <go.string.*+0x578>
+  4019a9:	48 89 94 33 80 00 00 	mov    %rdx,0x80(%rbx,%rsi,1)
+  4019b0:	00
+  4019b1:	48 8d 15 d5 55 26 00 	lea    0x2655d5(%rip),%rdx        # 666f8d <internal/cpu.X86+0x4d>
+  4019b8:	48 89 94 33 90 00 00 	mov    %rdx,0x90(%rbx,%rsi,1)
+  4019bf:	00
+  4019c0:	eb 23                	jmp    4019e5 <internal/cpu.doinit+0x3a5>
+  4019c2:	48 89 cf             	mov    %rcx,%rdi
+  4019c5:	48 8d 15 84 26 12 00 	lea    0x122684(%rip),%rdx        # 524050 <go.string.*+0x578>
+  4019cc:	e8 0f 18 06 00       	callq  4631e0 <runtime.gcWriteBarrierDX>
+  4019d1:	4c 89 ff             	mov    %r15,%rdi
+  4019d4:	48 8d 15 b2 55 26 00 	lea    0x2655b2(%rip),%rdx        # 666f8d <internal/cpu.X86+0x4d>
+  4019db:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+  4019e0:	e8 fb 17 06 00       	callq  4631e0 <runtime.gcWriteBarrierDX>
+  4019e5:	83 f8 03             	cmp    $0x3,%eax
+  4019e8:	0f 8d 7d 02 00 00    	jge    401c6b <internal/cpu.doinit+0x62b>
+  4019ee:	48 8b 35 f3 09 21 00 	mov    0x2109f3(%rip),%rsi        # 6123e8 <internal/cpu.options+0x8>
+  4019f5:	48 8d 56 05          	lea    0x5(%rsi),%rdx
+  4019f9:	48 8b 1d e0 09 21 00 	mov    0x2109e0(%rip),%rbx        # 6123e0 <internal/cpu.options>
+  401a00:	48 8b 3d e9 09 21 00 	mov    0x2109e9(%rip),%rdi        # 6123f0 <internal/cpu.options+0x10>
+  401a07:	48 39 d7             	cmp    %rdx,%rdi
+  401a0a:	73 3f                	jae    401a4b <internal/cpu.doinit+0x40b>
+  401a0c:	48 8d 05 2d 4f 11 00 	lea    0x114f2d(%rip),%rax        # 516940 <type.*+0x1f940>
+  401a13:	48 89 f1             	mov    %rsi,%rcx
+  401a16:	48 89 d6             	mov    %rdx,%rsi
+  401a19:	e8 42 8c 04 00       	callq  44a660 <runtime.growslice>
+  401a1e:	48 89 0d cb 09 21 00 	mov    %rcx,0x2109cb(%rip)        # 6123f0 <internal/cpu.options+0x10>
+  401a25:	83 3d c4 4f 26 00 00 	cmpl   $0x0,0x264fc4(%rip)        # 6669f0 <runtime.writeBarrier>
+  401a2c:	75 09                	jne    401a37 <internal/cpu.doinit+0x3f7>
+  401a2e:	48 89 05 ab 09 21 00 	mov    %rax,0x2109ab(%rip)        # 6123e0 <internal/cpu.options>
+  401a35:	eb 0e                	jmp    401a45 <internal/cpu.doinit+0x405>
+  401a37:	48 8d 3d a2 09 21 00 	lea    0x2109a2(%rip),%rdi        # 6123e0 <internal/cpu.options>
+  401a3e:	66 90                	xchg   %ax,%ax
+  401a40:	e8 7b 16 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401a45:	48 89 de             	mov    %rbx,%rsi
+  401a48:	48 89 c3             	mov    %rax,%rbx
+  401a4b:	48 8d 46 05          	lea    0x5(%rsi),%rax
+  401a4f:	48 89 05 92 09 21 00 	mov    %rax,0x210992(%rip)        # 6123e8 <internal/cpu.options+0x8>
+  401a56:	48 c1 e6 05          	shl    $0x5,%rsi
+  401a5a:	48 c7 44 33 08 03 00 	movq   $0x3,0x8(%rbx,%rsi,1)
+  401a61:	00 00
+  401a63:	c6 44 33 18 00       	movb   $0x0,0x18(%rbx,%rsi,1)
+  401a68:	c6 44 33 19 00       	movb   $0x0,0x19(%rbx,%rsi,1)
+  401a6d:	48 8d 3c 33          	lea    (%rbx,%rsi,1),%rdi
+  401a71:	48 8d 04 33          	lea    (%rbx,%rsi,1),%rax
+  401a75:	48 8d 40 10          	lea    0x10(%rax),%rax
+  401a79:	48 8d 0c 33          	lea    (%rbx,%rsi,1),%rcx
+  401a7d:	48 8d 49 20          	lea    0x20(%rcx),%rcx
+  401a81:	48 8d 14 33          	lea    (%rbx,%rsi,1),%rdx
+  401a85:	48 8d 52 30          	lea    0x30(%rdx),%rdx
+  401a89:	4c 8d 04 33          	lea    (%rbx,%rsi,1),%r8
+  401a8d:	4d 8d 40 40          	lea    0x40(%r8),%r8
+  401a91:	4c 8d 0c 33          	lea    (%rbx,%rsi,1),%r9
+  401a95:	4d 8d 49 50          	lea    0x50(%r9),%r9
+  401a99:	4c 8d 14 33          	lea    (%rbx,%rsi,1),%r10
+  401a9d:	4d 8d 52 60          	lea    0x60(%r10),%r10
+  401aa1:	4c 8d 1c 33          	lea    (%rbx,%rsi,1),%r11
+  401aa5:	4d 8d 5b 70          	lea    0x70(%r11),%r11
+  401aa9:	4c 8d 24 33          	lea    (%rbx,%rsi,1),%r12
+  401aad:	4d 8d a4 24 80 00 00 	lea    0x80(%r12),%r12
+  401ab4:	00
+  401ab5:	4c 8d 2c 33          	lea    (%rbx,%rsi,1),%r13
+  401ab9:	4d 8d ad 90 00 00 00 	lea    0x90(%r13),%r13
+  401ac0:	83 3d 29 4f 26 00 00 	cmpl   $0x0,0x264f29(%rip)        # 6669f0 <runtime.writeBarrier>
+  401ac7:	75 19                	jne    401ae2 <internal/cpu.doinit+0x4a2>
+  401ac9:	48 8d 05 bd 21 12 00 	lea    0x1221bd(%rip),%rax        # 523c8d <go.string.*+0x1b5>
+  401ad0:	48 89 04 33          	mov    %rax,(%rbx,%rsi,1)
+  401ad4:	48 8d 05 a7 54 26 00 	lea    0x2654a7(%rip),%rax        # 666f82 <internal/cpu.X86+0x42>
+  401adb:	48 89 44 33 10       	mov    %rax,0x10(%rbx,%rsi,1)
+  401ae0:	eb 26                	jmp    401b08 <internal/cpu.doinit+0x4c8>
+  401ae2:	4d 89 cf             	mov    %r9,%r15
+  401ae5:	4c 8d 0d a1 21 12 00 	lea    0x1221a1(%rip),%r9        # 523c8d <go.string.*+0x1b5>
+  401aec:	e8 6f 17 06 00       	callq  463260 <runtime.gcWriteBarrierR9>
+  401af1:	48 89 c7             	mov    %rax,%rdi
+  401af4:	48 8d 05 87 54 26 00 	lea    0x265487(%rip),%rax        # 666f82 <internal/cpu.X86+0x42>
+  401afb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+  401b00:	e8 bb 15 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401b05:	4d 89 f9             	mov    %r15,%r9
+  401b08:	48 c7 44 33 28 04 00 	movq   $0x4,0x28(%rbx,%rsi,1)
+  401b0f:	00 00
+  401b11:	c6 44 33 38 00       	movb   $0x0,0x38(%rbx,%rsi,1)
+  401b16:	c6 44 33 39 00       	movb   $0x0,0x39(%rbx,%rsi,1)
+  401b1b:	83 3d ce 4e 26 00 00 	cmpl   $0x0,0x264ece(%rip)        # 6669f0 <runtime.writeBarrier>
+  401b22:	75 1a                	jne    401b3e <internal/cpu.doinit+0x4fe>
+  401b24:	48 8d 05 db 22 12 00 	lea    0x1222db(%rip),%rax        # 523e06 <go.string.*+0x32e>
+  401b2b:	48 89 44 33 20       	mov    %rax,0x20(%rbx,%rsi,1)
+  401b30:	48 8d 05 4c 54 26 00 	lea    0x26544c(%rip),%rax        # 666f83 <internal/cpu.X86+0x43>
+  401b37:	48 89 44 33 30       	mov    %rax,0x30(%rbx,%rsi,1)
+  401b3c:	eb 1e                	jmp    401b5c <internal/cpu.doinit+0x51c>
+  401b3e:	48 89 cf             	mov    %rcx,%rdi
+  401b41:	48 8d 05 be 22 12 00 	lea    0x1222be(%rip),%rax        # 523e06 <go.string.*+0x32e>
+  401b48:	e8 73 15 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401b4d:	48 89 d7             	mov    %rdx,%rdi
+  401b50:	48 8d 05 2c 54 26 00 	lea    0x26542c(%rip),%rax        # 666f83 <internal/cpu.X86+0x43>
+  401b57:	e8 64 15 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401b5c:	48 c7 44 33 48 04 00 	movq   $0x4,0x48(%rbx,%rsi,1)
+  401b63:	00 00
+  401b65:	c6 44 33 58 00       	movb   $0x0,0x58(%rbx,%rsi,1)
+  401b6a:	c6 44 33 59 00       	movb   $0x0,0x59(%rbx,%rsi,1)
+  401b6f:	83 3d 7a 4e 26 00 00 	cmpl   $0x0,0x264e7a(%rip)        # 6669f0 <runtime.writeBarrier>
+  401b76:	75 1a                	jne    401b92 <internal/cpu.doinit+0x552>
+  401b78:	48 8d 05 97 22 12 00 	lea    0x122297(%rip),%rax        # 523e16 <go.string.*+0x33e>
+  401b7f:	48 89 44 33 40       	mov    %rax,0x40(%rbx,%rsi,1)
+  401b84:	48 8d 05 f9 53 26 00 	lea    0x2653f9(%rip),%rax        # 666f84 <internal/cpu.X86+0x44>
+  401b8b:	48 89 44 33 50       	mov    %rax,0x50(%rbx,%rsi,1)
+  401b90:	eb 22                	jmp    401bb4 <internal/cpu.doinit+0x574>
+  401b92:	4c 89 c7             	mov    %r8,%rdi
+  401b95:	48 8d 05 7a 22 12 00 	lea    0x12227a(%rip),%rax        # 523e16 <go.string.*+0x33e>
+  401b9c:	0f 1f 40 00          	nopl   0x0(%rax)
+  401ba0:	e8 1b 15 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401ba5:	4c 89 cf             	mov    %r9,%rdi
+  401ba8:	48 8d 05 d5 53 26 00 	lea    0x2653d5(%rip),%rax        # 666f84 <internal/cpu.X86+0x44>
+  401baf:	e8 0c 15 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401bb4:	48 c7 44 33 68 04 00 	movq   $0x4,0x68(%rbx,%rsi,1)
+  401bbb:	00 00
+  401bbd:	c6 44 33 78 00       	movb   $0x0,0x78(%rbx,%rsi,1)
+  401bc2:	c6 44 33 79 00       	movb   $0x0,0x79(%rbx,%rsi,1)
+  401bc7:	83 3d 22 4e 26 00 00 	cmpl   $0x0,0x264e22(%rip)        # 6669f0 <runtime.writeBarrier>
+  401bce:	75 1a                	jne    401bea <internal/cpu.doinit+0x5aa>
+  401bd0:	48 8d 05 43 22 12 00 	lea    0x122243(%rip),%rax        # 523e1a <go.string.*+0x342>
+  401bd7:	48 89 44 33 60       	mov    %rax,0x60(%rbx,%rsi,1)
+  401bdc:	48 8d 05 a2 53 26 00 	lea    0x2653a2(%rip),%rax        # 666f85 <internal/cpu.X86+0x45>
+  401be3:	48 89 44 33 70       	mov    %rax,0x70(%rbx,%rsi,1)
+  401be8:	eb 1e                	jmp    401c08 <internal/cpu.doinit+0x5c8>
+  401bea:	4c 89 d7             	mov    %r10,%rdi
+  401bed:	48 8d 05 26 22 12 00 	lea    0x122226(%rip),%rax        # 523e1a <go.string.*+0x342>
+  401bf4:	e8 c7 14 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401bf9:	4c 89 df             	mov    %r11,%rdi
+  401bfc:	48 8d 05 82 53 26 00 	lea    0x265382(%rip),%rax        # 666f85 <internal/cpu.X86+0x45>
+  401c03:	e8 b8 14 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401c08:	48 c7 84 33 88 00 00 	movq   $0x3,0x88(%rbx,%rsi,1)
+  401c0f:	00 03 00 00 00
+  401c14:	c6 84 33 98 00 00 00 	movb   $0x0,0x98(%rbx,%rsi,1)
+  401c1b:	00
+  401c1c:	c6 84 33 99 00 00 00 	movb   $0x0,0x99(%rbx,%rsi,1)
+  401c23:	00
+  401c24:	83 3d c5 4d 26 00 00 	cmpl   $0x0,0x264dc5(%rip)        # 6669f0 <runtime.writeBarrier>
+  401c2b:	75 20                	jne    401c4d <internal/cpu.doinit+0x60d>
+  401c2d:	48 8d 05 6e 20 12 00 	lea    0x12206e(%rip),%rax        # 523ca2 <go.string.*+0x1ca>
+  401c34:	48 89 84 33 80 00 00 	mov    %rax,0x80(%rbx,%rsi,1)
+  401c3b:	00
+  401c3c:	48 8d 05 44 53 26 00 	lea    0x265344(%rip),%rax        # 666f87 <internal/cpu.X86+0x47>
+  401c43:	48 89 84 33 90 00 00 	mov    %rax,0x90(%rbx,%rsi,1)
+  401c4a:	00
+  401c4b:	eb 1e                	jmp    401c6b <internal/cpu.doinit+0x62b>
+  401c4d:	4c 89 e7             	mov    %r12,%rdi
+  401c50:	48 8d 05 4b 20 12 00 	lea    0x12204b(%rip),%rax        # 523ca2 <go.string.*+0x1ca>
+  401c57:	e8 64 14 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401c5c:	4c 89 ef             	mov    %r13,%rdi
+  401c5f:	48 8d 05 21 53 26 00 	lea    0x265321(%rip),%rax        # 666f87 <internal/cpu.X86+0x47>
+  401c66:	e8 55 14 06 00       	callq  4630c0 <runtime.gcWriteBarrier>
+  401c6b:	48 c7 04 24 00 00 00 	movq   $0x0,(%rsp)
+  401c72:	00
+  401c73:	e8 48 02 00 00       	callq  401ec0 <internal/cpu.cpuid.abi0>
+  401c78:	45 0f 57 ff          	xorps  %xmm15,%xmm15
+  401c7c:	65 4c 8b 34 25 28 00 	mov    %gs:0x28,%r14
+  401c83:	00 00
+  401c85:	4d 8b b6 00 00 00 00 	mov    0x0(%r14),%r14
+  401c8c:	8b 44 24 08          	mov    0x8(%rsp),%eax
+  401c90:	83 f8 01             	cmp    $0x1,%eax
+  401c93:	0f 82 03 02 00 00    	jb     401e9c <internal/cpu.doinit+0x85c>
+  401c99:	89 44 24 44          	mov    %eax,0x44(%rsp)
+  401c9d:	b8 00 00 00 80       	mov    $0x80000000,%eax
+  401ca2:	48 89 04 24          	mov    %rax,(%rsp)
+  401ca6:	e8 15 02 00 00       	callq  401ec0 <internal/cpu.cpuid.abi0>
+  401cab:	45 0f 57 ff          	xorps  %xmm15,%xmm15
+  401caf:	65 4c 8b 34 25 28 00 	mov    %gs:0x28,%r14
+  401cb6:	00 00
+  401cb8:	4d 8b b6 00 00 00 00 	mov    0x0(%r14),%r14
+  401cbf:	8b 44 24 08          	mov    0x8(%rsp),%eax
+  401cc3:	89 05 1b 4a 26 00    	mov    %eax,0x264a1b(%rip)        # 6666e4 <internal/cpu.maxExtendedFunctionInformation>
+  401cc9:	48 c7 04 24 01 00 00 	movq   $0x1,(%rsp)
+  401cd0:	00
+  401cd1:	e8 ea 01 00 00       	callq  401ec0 <internal/cpu.cpuid.abi0>
+  401cd6:	45 0f 57 ff          	xorps  %xmm15,%xmm15
+  401cda:	65 4c 8b 34 25 28 00 	mov    %gs:0x28,%r14
+  401ce1:	00 00
+  401ce3:	4d 8b b6 00 00 00 00 	mov    0x0(%r14),%r14
+  401cea:	8b 44 24 10          	mov    0x10(%rsp),%eax
+  401cee:	0f ba e0 00          	bt     $0x0,%eax
+  401cf2:	0f 92 05 93 52 26 00 	setb   0x265293(%rip)        # 666f8c <internal/cpu.X86+0x4c>
+  401cf9:	0f ba e0 01          	bt     $0x1,%eax
+  401cfd:	0f 92 05 85 52 26 00 	setb   0x265285(%rip)        # 666f89 <internal/cpu.X86+0x49>
+  401d04:	0f ba e0 09          	bt     $0x9,%eax
+  401d08:	0f 92 05 7e 52 26 00 	setb   0x26527e(%rip)        # 666f8d <internal/cpu.X86+0x4d>
+  401d0f:	0f ba e0 13          	bt     $0x13,%eax
+  401d13:	0f 92 05 74 52 26 00 	setb   0x265274(%rip)        # 666f8e <internal/cpu.X86+0x4e>
+  401d1a:	0f ba e0 14          	bt     $0x14,%eax
+  401d1e:	0f 92 05 6a 52 26 00 	setb   0x26526a(%rip)        # 666f8f <internal/cpu.X86+0x4f>
+  401d25:	0f ba e0 17          	bt     $0x17,%eax
+  401d29:	0f 92 05 5a 52 26 00 	setb   0x26525a(%rip)        # 666f8a <internal/cpu.X86+0x4a>
+  401d30:	0f ba e0 19          	bt     $0x19,%eax
+  401d34:	0f 92 05 45 52 26 00 	setb   0x265245(%rip)        # 666f80 <internal/cpu.X86+0x40>
+  401d3b:	0f ba e0 1b          	bt     $0x1b,%eax
+  401d3f:	0f 92 c1             	setb   %cl
+  401d42:	88 0d 40 52 26 00    	mov    %cl,0x265240(%rip)        # 666f88 <internal/cpu.X86+0x48>
+  401d48:	0f ba e0 0c          	bt     $0xc,%eax
+  401d4c:	0f 92 c2             	setb   %dl
+  401d4f:	21 ca                	and    %ecx,%edx
+  401d51:	88 15 30 52 26 00    	mov    %dl,0x265230(%rip)        # 666f87 <internal/cpu.X86+0x47>
+  401d57:	0f ba e0 1b          	bt     $0x1b,%eax
+  401d5b:	72 05                	jb     401d62 <internal/cpu.doinit+0x722>
+  401d5d:	31 c9                	xor    %ecx,%ecx
+  401d5f:	90                   	nop
+  401d60:	eb 37                	jmp    401d99 <internal/cpu.doinit+0x759>
+  401d62:	89 44 24 4c          	mov    %eax,0x4c(%rsp)
+  401d66:	e8 75 01 00 00       	callq  401ee0 <internal/cpu.xgetbv.abi0>
+  401d6b:	45 0f 57 ff          	xorps  %xmm15,%xmm15
+  401d6f:	65 4c 8b 34 25 28 00 	mov    %gs:0x28,%r14
+  401d76:	00 00
+  401d78:	4d 8b b6 00 00 00 00 	mov    0x0(%r14),%r14
+  401d7f:	8b 04 24             	mov    (%rsp),%eax
+  401d82:	0f ba e0 01          	bt     $0x1,%eax
+  401d86:	73 09                	jae    401d91 <internal/cpu.doinit+0x751>
+  401d88:	0f ba e0 02          	bt     $0x2,%eax
+  401d8c:	0f 92 c0             	setb   %al
+  401d8f:	eb 02                	jmp    401d93 <internal/cpu.doinit+0x753>
+  401d91:	31 c0                	xor    %eax,%eax
+  401d93:	89 c1                	mov    %eax,%ecx
+  401d95:	8b 44 24 4c          	mov    0x4c(%rsp),%eax
+  401d99:	0f ba e0 1c          	bt     $0x1c,%eax
+  401d9d:	0f 92 c0             	setb   %al
+  401da0:	21 c8                	and    %ecx,%eax
+  401da2:	88 05 da 51 26 00    	mov    %al,0x2651da(%rip)        # 666f82 <internal/cpu.X86+0x42>
+  401da8:	8b 44 24 44          	mov    0x44(%rsp),%eax
+  401dac:	83 f8 07             	cmp    $0x7,%eax
+  401daf:	0f 82 dd 00 00 00    	jb     401e92 <internal/cpu.doinit+0x852>
+  401db5:	88 4c 24 43          	mov    %cl,0x43(%rsp)
+  401db9:	48 c7 04 24 07 00 00 	movq   $0x7,(%rsp)
+  401dc0:	00
+  401dc1:	e8 fa 00 00 00       	callq  401ec0 <internal/cpu.cpuid.abi0>
+  401dc6:	45 0f 57 ff          	xorps  %xmm15,%xmm15
+  401dca:	65 4c 8b 34 25 28 00 	mov    %gs:0x28,%r14
+  401dd1:	00 00
+  401dd3:	4d 8b b6 00 00 00 00 	mov    0x0(%r14),%r14
+  401dda:	8b 44 24 0c          	mov    0xc(%rsp),%eax
+  401dde:	0f ba e0 03          	bt     $0x3,%eax
+  401de2:	0f 92 05 9b 51 26 00 	setb   0x26519b(%rip)        # 666f84 <internal/cpu.X86+0x44>
+  401de9:	0f ba e0 05          	bt     $0x5,%eax
+  401ded:	0f 92 c1             	setb   %cl
+  401df0:	0f b6 54 24 43       	movzbl 0x43(%rsp),%edx
+  401df5:	21 ca                	and    %ecx,%edx
+  401df7:	88 15 86 51 26 00    	mov    %dl,0x265186(%rip)        # 666f83 <internal/cpu.X86+0x43>
+  401dfd:	0f ba e0 08          	bt     $0x8,%eax
+  401e01:	0f 92 05 7d 51 26 00 	setb   0x26517d(%rip)        # 666f85 <internal/cpu.X86+0x45>
+  401e08:	0f ba e0 09          	bt     $0x9,%eax
+  401e0c:	0f 92 05 73 51 26 00 	setb   0x265173(%rip)        # 666f86 <internal/cpu.X86+0x46>
+  401e13:	0f ba e0 13          	bt     $0x13,%eax
+  401e17:	0f 92 05 63 51 26 00 	setb   0x265163(%rip)        # 666f81 <internal/cpu.X86+0x41>
+  401e1e:	b8 00 00 00 80       	mov    $0x80000000,%eax
+  401e23:	48 89 04 24          	mov    %rax,(%rsp)
+  401e27:	e8 94 00 00 00       	callq  401ec0 <internal/cpu.cpuid.abi0>
+  401e2c:	45 0f 57 ff          	xorps  %xmm15,%xmm15
+  401e30:	65 4c 8b 34 25 28 00 	mov    %gs:0x28,%r14
+  401e37:	00 00
+  401e39:	4d 8b b6 00 00 00 00 	mov    0x0(%r14),%r14
+  401e40:	81 7c 24 08 01 00 00 	cmpl   $0x80000001,0x8(%rsp)
+  401e47:	80
+  401e48:	73 0a                	jae    401e54 <internal/cpu.doinit+0x814>
+  401e4a:	48 8b 6c 24 58       	mov    0x58(%rsp),%rbp
+  401e4f:	48 83 c4 60          	add    $0x60,%rsp
+  401e53:	c3                   	retq
+  401e54:	b8 01 00 00 80       	mov    $0x80000001,%eax
+  401e59:	48 89 04 24          	mov    %rax,(%rsp)
+  401e5d:	0f 1f 00             	nopl   (%rax)
+  401e60:	e8 5b 00 00 00       	callq  401ec0 <internal/cpu.cpuid.abi0>
+  401e65:	45 0f 57 ff          	xorps  %xmm15,%xmm15
+  401e69:	65 4c 8b 34 25 28 00 	mov    %gs:0x28,%r14
+  401e70:	00 00
+  401e72:	4d 8b b6 00 00 00 00 	mov    0x0(%r14),%r14
+  401e79:	8b 44 24 14          	mov    0x14(%rsp),%eax
+  401e7d:	0f ba e0 1b          	bt     $0x1b,%eax
+  401e81:	0f 92 05 03 51 26 00 	setb   0x265103(%rip)        # 666f8b <internal/cpu.X86+0x4b>
+  401e88:	48 8b 6c 24 58       	mov    0x58(%rsp),%rbp
+  401e8d:	48 83 c4 60          	add    $0x60,%rsp
+  401e91:	c3                   	retq
+  401e92:	48 8b 6c 24 58       	mov    0x58(%rsp),%rbp
+  401e97:	48 83 c4 60          	add    $0x60,%rsp
+  401e9b:	c3                   	retq
+  401e9c:	48 8b 6c 24 58       	mov    0x58(%rsp),%rbp
+  401ea1:	48 83 c4 60          	add    $0x60,%rsp
+  401ea5:	c3                   	retq
+  401ea6:	e8 d5 ef 05 00       	callq  460e80 <runtime.morestack_noctxt.abi0>
+  401eab:	e9 90 f7 ff ff       	jmpq   401640 <internal/cpu.doinit>
+  401eb0:	cc                   	int3
+  401eb1:	cc                   	int3
+  401eb2:	cc                   	int3
+  401eb3:	cc                   	int3
+  401eb4:	cc                   	int3
+  401eb5:	cc                   	int3
+  401eb6:	cc                   	int3
+  401eb7:	cc                   	int3
+  401eb8:	cc                   	int3
+  401eb9:	cc                   	int3
+  401eba:	cc                   	int3
+  401ebb:	cc                   	int3
+  401ebc:	cc                   	int3
+  401ebd:	cc                   	int3
+  401ebe:	cc                   	int3
+  401ebf:	cc                   	int3
